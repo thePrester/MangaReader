@@ -1,0 +1,7 @@
+Configuring scalpel-0.5.1...
+Preprocessing library for scalpel-0.5.1..
+Building library for scalpel-0.5.1..
+[1 of 2] Compiling Text.HTML.Scalpel.Internal.Scrape.URL ( src/Text/HTML/Scalpel/Internal/Scrape/URL.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/HTML/Scalpel/Internal/Scrape/URL.o )
+[2 of 2] Compiling Text.HTML.Scalpel ( src/Text/HTML/Scalpel.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/HTML/Scalpel.o )
+Installing library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/scalpel-0.5.1-FKItC2bPna3B0lO1pHqH2s
+Registering library for scalpel-0.5.1..

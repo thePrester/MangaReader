@@ -1,0 +1,8 @@
+Configuring RSA-2.3.0...
+Preprocessing library for RSA-2.3.0..
+Building library for RSA-2.3.0..
+[1 of 3] Compiling Codec.Crypto.RSA.Pure ( src/Codec/Crypto/RSA/Pure.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Crypto/RSA/Pure.o )
+[2 of 3] Compiling Codec.Crypto.RSA.Exceptions ( src/Codec/Crypto/RSA/Exceptions.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Crypto/RSA/Exceptions.o )
+[3 of 3] Compiling Codec.Crypto.RSA ( src/Codec/Crypto/RSA.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Crypto/RSA.o )
+Installing library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/RSA-2.3.0-GUxboXL39fkBoTRf9cm8O0
+Registering library for RSA-2.3.0..

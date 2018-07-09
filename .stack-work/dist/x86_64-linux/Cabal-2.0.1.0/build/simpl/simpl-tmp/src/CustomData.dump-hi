@@ -1,0 +1,1849 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-09 01:34:32.768038 UTC
+
+interface main:CustomData [family instance module] 8022
+  interface hash: 0b8aa174e41078de06aa4b284507565a
+  ABI hash: 38f0bd6f3d2c462d07d1369c8ca7c65e
+  export-list hash: ee9b8754e4e2243bca463c8d5cb7256a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b9714c63c6b0341ee6213e6e474a1c54
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CustomData.MangaChapter{CustomData.MangaChapter chName chUrlLink}
+  CustomData.MangaInfo{CustomData.MangaInfo name urlLink}
+  CustomData.PageUrl{CustomData.PageUrl chapter mangaName maxPage page source}
+  CustomData.Person{CustomData.Person firstName lastName}
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0
+                      base16-bytestring-0.1.1.6 base64-bytestring-1.0.0.1 binary-0.8.5.1
+                      blaze-builder-0.4.0.2 bytestring-0.10.8.2 containers-0.5.10.2
+                      deepseq-1.4.3.0 errors-2.2.2 exceptions-0.8.3 ghc-boot-th-8.2.2
+                      ghc-prim-0.5.1.1 hashable-1.2.6.1 integer-gmp-1.0.1.0 lucid-2.9.9
+                      mmorph-1.1.0 mtl-2.2.1 stm-2.4.4.1 template-haskell-2.12.0.0
+                      text-1.2.2.2 text-conversions-0.3.0 transformers-0.5.2.0
+                      unexceptionalio-0.3.0 unordered-containers-0.2.8.0
+orphans: stm-2.4.4.1:Control.Monad.STM
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         hashable-1.2.6.1:Data.Hashable.Generic text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.2.2:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         unordered-containers-0.2.8.0:Data.HashMap.Base
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Monoid c0108b166e27f747671c7fe4ffb11019
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Generics c2a8006cab1f0055555a6c72607a574b
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  lucid-2.9.9:Lucid.Base c76bc22547808ed6245e5653874108fe
+import  -/  lucid-2.9.9:Lucid.Html5 2a818ab1959feca6f116f9997a86f124
+import  -/  text-1.2.2.2:Data.Text.Internal 965a1ec05875083803dc83d56dbb61f7
+import  -/  text-conversions-0.3.0:Data.Text.Conversions e9e91238becd91f5aa85c9c56f722c0b
+7b216473ebbafcfc5cf879f5b7cee452
+  $fGenericMangaChapter ::
+    GHC.Generics.Generic CustomData.MangaChapter
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.MangaChapter
+                  CustomData.$fGenericMangaChapter1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <CustomData.MangaChapter>_R
+                   ->_R Trans
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.D>_P
+                                      <'GHC.Generics.MetaData
+                                         "MangaChapter" "CustomData" "main" 'GHC.Types.False>_P
+                                      <GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "MangaChapter" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                         (GHC.Generics.M1
+                                            GHC.Generics.S
+                                            ('GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "chName")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy)
+                                            (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                                          GHC.Generics.:*: GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                ('GHC.Base.Just "chUrlLink")
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R
+                                                                GHC.Base.String))>_R))
+                            (Sub (Sym (CustomData.Rep_MangaChapter[0]))) <x>_N)
+                  CustomData.$fGenericMangaChapter_$cto -}
+7b216473ebbafcfc5cf879f5b7cee452
+  $fGenericMangaChapter1 ::
+    CustomData.MangaChapter
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "MangaChapter" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "chName")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                ('GHC.Base.Just "chUrlLink")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: CustomData.MangaChapter) ->
+                 case x1 of wild { CustomData.MangaChapter g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "chName")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "chUrlLink")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                    @ x
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <*>_N <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <*>_N
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "chName")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1
+                                      GHC.Generics.R Data.Text.Internal.Text>_R) <x>_N))
+                    g2
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <*>_N
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "chUrlLink")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R) <x>_N)))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "MangaChapter" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "chName")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "chUrlLink")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R GHC.Base.String)>_R) <x>_N) }) -}
+7b216473ebbafcfc5cf879f5b7cee452
+  $fGenericMangaChapter_$cto ::
+    GHC.Generics.Rep CustomData.MangaChapter x
+    -> CustomData.MangaChapter
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep CustomData.MangaChapter x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (CustomData.Rep_MangaChapter[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "MangaChapter" "CustomData" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "MangaChapter" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "chName")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "chUrlLink")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R GHC.Base.String))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "MangaChapter" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "chName")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            ('GHC.Base.Just "chUrlLink")
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            GHC.Base.String)>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 CustomData.MangaChapter
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "chName")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P))
+                   ds2
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "chUrlLink")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P)) }) -}
+58540e6d7af1ea659c13eea80b143eab
+  $fGenericMangaInfo :: GHC.Generics.Generic CustomData.MangaInfo
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.MangaInfo
+                  CustomData.$fGenericMangaInfo1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <CustomData.MangaInfo>_R
+                   ->_R Trans
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.D>_P
+                                      <'GHC.Generics.MetaData
+                                         "MangaInfo" "CustomData" "main" 'GHC.Types.False>_P
+                                      <GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "MangaInfo" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                         (GHC.Generics.M1
+                                            GHC.Generics.S
+                                            ('GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "name")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy)
+                                            (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                                          GHC.Generics.:*: GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                ('GHC.Base.Just "urlLink")
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R
+                                                                Data.Text.Internal.Text))>_R))
+                            (Sub (Sym (CustomData.Rep_MangaInfo[0]))) <x>_N)
+                  CustomData.$fGenericMangaInfo_$cto -}
+58540e6d7af1ea659c13eea80b143eab
+  $fGenericMangaInfo1 ::
+    CustomData.MangaInfo
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "MangaInfo" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "name")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                ('GHC.Base.Just "urlLink")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: CustomData.MangaInfo) ->
+                 case x1 of wild { CustomData.MangaInfo g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "name")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "urlLink")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text))
+                    @ x
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <*>_N <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <*>_N
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "name")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1
+                                      GHC.Generics.R Data.Text.Internal.Text>_R) <x>_N))
+                    g2
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <*>_N <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <*>_N
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "urlLink")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1
+                                      GHC.Generics.R Data.Text.Internal.Text>_R) <x>_N)))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "MangaInfo" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "name")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "urlLink")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R
+                                                  Data.Text.Internal.Text)>_R) <x>_N) }) -}
+58540e6d7af1ea659c13eea80b143eab
+  $fGenericMangaInfo_$cto ::
+    GHC.Generics.Rep CustomData.MangaInfo x -> CustomData.MangaInfo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep CustomData.MangaInfo x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (CustomData.Rep_MangaInfo[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "MangaInfo" "CustomData" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "MangaInfo" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "name")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "urlLink")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R
+                                                               Data.Text.Internal.Text))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "MangaInfo" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "name")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            ('GHC.Base.Just "urlLink")
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            Data.Text.Internal.Text)>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 CustomData.MangaInfo
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "name")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P))
+                   ds2
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "urlLink")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P)) }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  $fGenericPageUrl :: GHC.Generics.Generic CustomData.PageUrl
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.PageUrl
+                  CustomData.$fGenericPageUrl1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <CustomData.PageUrl>_R
+                   ->_R Trans
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.D>_P
+                                      <'GHC.Generics.MetaData
+                                         "PageUrl" "CustomData" "main" 'GHC.Types.False>_P
+                                      <GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "PageUrl" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                         ((GHC.Generics.M1
+                                             GHC.Generics.S
+                                             ('GHC.Generics.MetaSel
+                                                ('GHC.Base.Just "mangaName")
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy)
+                                             (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                                           GHC.Generics.:*: GHC.Generics.M1
+                                                              GHC.Generics.S
+                                                              ('GHC.Generics.MetaSel
+                                                                 ('GHC.Base.Just "chapter")
+                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                 'GHC.Generics.NoSourceStrictness
+                                                                 'GHC.Generics.DecidedLazy)
+                                                              (GHC.Generics.K1
+                                                                 GHC.Generics.R GHC.Types.Int))
+                                          GHC.Generics.:*: (GHC.Generics.M1
+                                                              GHC.Generics.S
+                                                              ('GHC.Generics.MetaSel
+                                                                 ('GHC.Base.Just "page")
+                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                 'GHC.Generics.NoSourceStrictness
+                                                                 'GHC.Generics.DecidedLazy)
+                                                              (GHC.Generics.K1
+                                                                 GHC.Generics.R GHC.Types.Int)
+                                                            GHC.Generics.:*: (GHC.Generics.M1
+                                                                                GHC.Generics.S
+                                                                                ('GHC.Generics.MetaSel
+                                                                                   ('GHC.Base.Just
+                                                                                      "maxPage")
+                                                                                   'GHC.Generics.NoSourceUnpackedness
+                                                                                   'GHC.Generics.NoSourceStrictness
+                                                                                   'GHC.Generics.DecidedLazy)
+                                                                                (GHC.Generics.K1
+                                                                                   GHC.Generics.R
+                                                                                   GHC.Types.Int)
+                                                                              GHC.Generics.:*: GHC.Generics.M1
+                                                                                                 GHC.Generics.S
+                                                                                                 ('GHC.Generics.MetaSel
+                                                                                                    ('GHC.Base.Just
+                                                                                                       "source")
+                                                                                                    'GHC.Generics.NoSourceUnpackedness
+                                                                                                    'GHC.Generics.NoSourceStrictness
+                                                                                                    'GHC.Generics.DecidedLazy)
+                                                                                                 (GHC.Generics.K1
+                                                                                                    GHC.Generics.R
+                                                                                                    Data.Text.Internal.Text))))>_R))
+                            (Sub (Sym (CustomData.Rep_PageUrl[0]))) <x>_N)
+                  CustomData.$fGenericPageUrl_$cto -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  $fGenericPageUrl1 ::
+    CustomData.PageUrl
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "PageUrl" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         ((GHC.Generics.M1
+             GHC.Generics.S
+             ('GHC.Generics.MetaSel
+                ('GHC.Base.Just "mangaName")
+                'GHC.Generics.NoSourceUnpackedness
+                'GHC.Generics.NoSourceStrictness
+                'GHC.Generics.DecidedLazy)
+             (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+           GHC.Generics.:*: GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "chapter")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+          GHC.Generics.:*: (GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "page")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                            GHC.Generics.:*: (GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Base.Just "maxPage")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                                              GHC.Generics.:*: GHC.Generics.M1
+                                                                 GHC.Generics.S
+                                                                 ('GHC.Generics.MetaSel
+                                                                    ('GHC.Base.Just "source")
+                                                                    'GHC.Generics.NoSourceUnpackedness
+                                                                    'GHC.Generics.NoSourceStrictness
+                                                                    'GHC.Generics.DecidedLazy)
+                                                                 (GHC.Generics.K1
+                                                                    GHC.Generics.R
+                                                                    Data.Text.Internal.Text))))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: CustomData.PageUrl) ->
+                 case x1 of wild { CustomData.PageUrl g1 g2 g3 g4 g5 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "mangaName")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                       GHC.Generics.:*: GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "chapter")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "page")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                       GHC.Generics.:*: (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "maxPage")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "source")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R
+                                                               Data.Text.Internal.Text)))
+                    @ x
+                    (GHC.Generics.:*:
+                       @ *
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "mangaName")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "chapter")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                       @ x
+                       g1
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         ('GHC.Base.Just "mangaName")
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R) <x>_N))
+                       g2
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <*>_N <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         ('GHC.Base.Just "chapter")
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R) <x>_N)))
+                    (GHC.Generics.:*:
+                       @ *
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "page")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "maxPage")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                          GHC.Generics.:*: GHC.Generics.M1
+                                             GHC.Generics.S
+                                             ('GHC.Generics.MetaSel
+                                                ('GHC.Base.Just "source")
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy)
+                                             (GHC.Generics.K1
+                                                GHC.Generics.R Data.Text.Internal.Text))
+                       @ x
+                       g3
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <*>_N <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         ('GHC.Base.Just "page")
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R) <x>_N))
+                       (GHC.Generics.:*:
+                          @ *
+                          @ (GHC.Generics.M1
+                               GHC.Generics.S
+                               ('GHC.Generics.MetaSel
+                                  ('GHC.Base.Just "maxPage")
+                                  'GHC.Generics.NoSourceUnpackedness
+                                  'GHC.Generics.NoSourceStrictness
+                                  'GHC.Generics.DecidedLazy)
+                               (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                          @ (GHC.Generics.M1
+                               GHC.Generics.S
+                               ('GHC.Generics.MetaSel
+                                  ('GHC.Base.Just "source")
+                                  'GHC.Generics.NoSourceUnpackedness
+                                  'GHC.Generics.NoSourceStrictness
+                                  'GHC.Generics.DecidedLazy)
+                               (GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text))
+                          @ x
+                          g4
+                            `cast`
+                          (Trans
+                               (Sym (GHC.Generics.N:K1[0]
+                                         <*>_N <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P))
+                               (Sym (GHC.Generics.N:M1[0]
+                                         <*>_N
+                                         <GHC.Generics.S>_P
+                                         <'GHC.Generics.MetaSel
+                                            ('GHC.Base.Just "maxPage")
+                                            'GHC.Generics.NoSourceUnpackedness
+                                            'GHC.Generics.NoSourceStrictness
+                                            'GHC.Generics.DecidedLazy>_P
+                                         <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R) <x>_N))
+                          g5
+                            `cast`
+                          (Trans
+                               (Sym (GHC.Generics.N:K1[0]
+                                         <*>_N
+                                         <GHC.Generics.R>_P
+                                         <Data.Text.Internal.Text>_R
+                                         <x>_P))
+                               (Sym (GHC.Generics.N:M1[0]
+                                         <*>_N
+                                         <GHC.Generics.S>_P
+                                         <'GHC.Generics.MetaSel
+                                            ('GHC.Base.Just "source")
+                                            'GHC.Generics.NoSourceUnpackedness
+                                            'GHC.Generics.NoSourceStrictness
+                                            'GHC.Generics.DecidedLazy>_P
+                                         <GHC.Generics.K1
+                                            GHC.Generics.R Data.Text.Internal.Text>_R) <x>_N)))))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "PageUrl" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <(GHC.Generics.M1
+                               GHC.Generics.S
+                               ('GHC.Generics.MetaSel
+                                  ('GHC.Base.Just "mangaName")
+                                  'GHC.Generics.NoSourceUnpackedness
+                                  'GHC.Generics.NoSourceStrictness
+                                  'GHC.Generics.DecidedLazy)
+                               (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                             GHC.Generics.:*: GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Base.Just "chapter")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                            GHC.Generics.:*: (GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Base.Just "page")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                                              GHC.Generics.:*: (GHC.Generics.M1
+                                                                  GHC.Generics.S
+                                                                  ('GHC.Generics.MetaSel
+                                                                     ('GHC.Base.Just "maxPage")
+                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                     'GHC.Generics.NoSourceStrictness
+                                                                     'GHC.Generics.DecidedLazy)
+                                                                  (GHC.Generics.K1
+                                                                     GHC.Generics.R GHC.Types.Int)
+                                                                GHC.Generics.:*: GHC.Generics.M1
+                                                                                   GHC.Generics.S
+                                                                                   ('GHC.Generics.MetaSel
+                                                                                      ('GHC.Base.Just
+                                                                                         "source")
+                                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                                      'GHC.Generics.NoSourceStrictness
+                                                                                      'GHC.Generics.DecidedLazy)
+                                                                                   (GHC.Generics.K1
+                                                                                      GHC.Generics.R
+                                                                                      Data.Text.Internal.Text)))>_R) <x>_N) }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  $fGenericPageUrl_$cto ::
+    GHC.Generics.Rep CustomData.PageUrl x -> CustomData.PageUrl
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(LS)),1*U(1*U(U,U),1*U(U,1*U(U,U)))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep CustomData.PageUrl x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (CustomData.Rep_PageUrl[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "PageUrl" "CustomData" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "PageUrl" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        ((GHC.Generics.M1
+                                            GHC.Generics.S
+                                            ('GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "mangaName")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy)
+                                            (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                                          GHC.Generics.:*: GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                ('GHC.Base.Just "chapter")
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R GHC.Types.Int))
+                                         GHC.Generics.:*: (GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                ('GHC.Base.Just "page")
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R GHC.Types.Int)
+                                                           GHC.Generics.:*: (GHC.Generics.M1
+                                                                               GHC.Generics.S
+                                                                               ('GHC.Generics.MetaSel
+                                                                                  ('GHC.Base.Just
+                                                                                     "maxPage")
+                                                                                  'GHC.Generics.NoSourceUnpackedness
+                                                                                  'GHC.Generics.NoSourceStrictness
+                                                                                  'GHC.Generics.DecidedLazy)
+                                                                               (GHC.Generics.K1
+                                                                                  GHC.Generics.R
+                                                                                  GHC.Types.Int)
+                                                                             GHC.Generics.:*: GHC.Generics.M1
+                                                                                                GHC.Generics.S
+                                                                                                ('GHC.Generics.MetaSel
+                                                                                                   ('GHC.Base.Just
+                                                                                                      "source")
+                                                                                                   'GHC.Generics.NoSourceUnpackedness
+                                                                                                   'GHC.Generics.NoSourceStrictness
+                                                                                                   'GHC.Generics.DecidedLazy)
+                                                                                                (GHC.Generics.K1
+                                                                                                   GHC.Generics.R
+                                                                                                   Data.Text.Internal.Text))))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "PageUrl" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <(GHC.Generics.M1
+                                         GHC.Generics.S
+                                         ('GHC.Generics.MetaSel
+                                            ('GHC.Base.Just "mangaName")
+                                            'GHC.Generics.NoSourceUnpackedness
+                                            'GHC.Generics.NoSourceStrictness
+                                            'GHC.Generics.DecidedLazy)
+                                         (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                                       GHC.Generics.:*: GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             ('GHC.Base.Just "chapter")
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R GHC.Types.Int))
+                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             ('GHC.Base.Just "page")
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R GHC.Types.Int)
+                                                        GHC.Generics.:*: (GHC.Generics.M1
+                                                                            GHC.Generics.S
+                                                                            ('GHC.Generics.MetaSel
+                                                                               ('GHC.Base.Just
+                                                                                  "maxPage")
+                                                                               'GHC.Generics.NoSourceUnpackedness
+                                                                               'GHC.Generics.NoSourceStrictness
+                                                                               'GHC.Generics.DecidedLazy)
+                                                                            (GHC.Generics.K1
+                                                                               GHC.Generics.R
+                                                                               GHC.Types.Int)
+                                                                          GHC.Generics.:*: GHC.Generics.M1
+                                                                                             GHC.Generics.S
+                                                                                             ('GHC.Generics.MetaSel
+                                                                                                ('GHC.Base.Just
+                                                                                                   "source")
+                                                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                                                'GHC.Generics.NoSourceStrictness
+                                                                                                'GHC.Generics.DecidedLazy)
+                                                                                             (GHC.Generics.K1
+                                                                                                GHC.Generics.R
+                                                                                                Data.Text.Internal.Text)))>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 case ds1 of wild1 { GHC.Generics.:*: ds3 ds4 ->
+                 case ds2 of wild2 { GHC.Generics.:*: ds5 ds6 ->
+                 case ds6 of wild3 { GHC.Generics.:*: ds7 ds8 ->
+                 CustomData.PageUrl
+                   ds3
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "mangaName")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                   ds4
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "chapter")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P))
+                   ds5
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "page")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P))
+                   ds7
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "maxPage")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P))
+                   ds8
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "source")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N
+                             <GHC.Generics.R>_P
+                             <Data.Text.Internal.Text>_R
+                             <x>_P)) } } } }) -}
+918a985862b8997ddc0f828d903e8df7
+  $fGenericPerson :: GHC.Generics.Generic CustomData.Person
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.Person
+                  CustomData.$fGenericPerson1
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <CustomData.Person>_R
+                   ->_R Trans
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.D>_P
+                                      <'GHC.Generics.MetaData
+                                         "Person" "CustomData" "main" 'GHC.Types.False>_P
+                                      <GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "Person" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                         (GHC.Generics.M1
+                                            GHC.Generics.S
+                                            ('GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "firstName")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy)
+                                            (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                                          GHC.Generics.:*: GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                ('GHC.Base.Just "lastName")
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R
+                                                                GHC.Base.String))>_R))
+                            (Sub (Sym (CustomData.Rep_Person[0]))) <x>_N)
+                  CustomData.$fGenericPerson_$cto -}
+918a985862b8997ddc0f828d903e8df7
+  $fGenericPerson1 ::
+    CustomData.Person
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Person" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "firstName")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                ('GHC.Base.Just "lastName")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: CustomData.Person) ->
+                 case x1 of wild { CustomData.Person g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ *
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "firstName")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "lastName")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                    @ x
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <*>_N
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "firstName")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R) <x>_N))
+                    g2
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <*>_N
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "lastName")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R) <x>_N)))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <*>_N
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "Person" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "firstName")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "lastName")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R GHC.Base.String)>_R) <x>_N) }) -}
+918a985862b8997ddc0f828d903e8df7
+  $fGenericPerson_$cto ::
+    GHC.Generics.Rep CustomData.Person x -> CustomData.Person
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep CustomData.Person x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (CustomData.Rep_Person[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "Person" "CustomData" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "Person" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "firstName")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "lastName")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R GHC.Base.String))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "Person" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "firstName")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            ('GHC.Base.Just "lastName")
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            GHC.Base.String)>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 CustomData.Person
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "firstName")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                   ds2
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <*>_N
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "lastName")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P)) }) -}
+7b216473ebbafcfc5cf879f5b7cee452
+  $fToHtmlMangaChapter :: Lucid.Base.ToHtml CustomData.MangaChapter
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.MangaChapter
+                  CustomData.$fToHtmlMangaChapter_$ctoHtml
+                  CustomData.$fToHtmlMangaChapter_$ctoHtml -}
+7b216473ebbafcfc5cf879f5b7cee452
+  $fToHtmlMangaChapter_$ctoHtml ::
+    GHC.Base.Monad m =>
+    CustomData.MangaChapter -> Lucid.Base.HtmlT m ()
+  {- Arity: 2,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,U(1*U(U,U,U),1*U)> -}
+58540e6d7af1ea659c13eea80b143eab
+  $fToHtmlMangaInfo :: Lucid.Base.ToHtml CustomData.MangaInfo
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.MangaInfo
+                  CustomData.$fToHtmlMangaInfo_$ctoHtml
+                  CustomData.$fToHtmlMangaInfo_$ctoHtml -}
+58540e6d7af1ea659c13eea80b143eab
+  $fToHtmlMangaInfo_$ctoHtml ::
+    GHC.Base.Monad m => CustomData.MangaInfo -> Lucid.Base.HtmlT m ()
+  {- Arity: 2,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,U(1*U(U,U,U),1*U(U,U,U))> -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  $fToHtmlPageUrl :: Lucid.Base.ToHtml CustomData.PageUrl
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CustomData.PageUrl
+                  CustomData.$fToHtmlPageUrl_$ctoHtml
+                  CustomData.$fToHtmlPageUrl_$ctoHtml -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  $fToHtmlPageUrl_$ctoHtml ::
+    GHC.Base.Monad m => CustomData.PageUrl -> Lucid.Base.HtmlT m ()
+  {- Arity: 2,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,U(U,U(U),1*U(U),1*U(U),1*U(U,U,U))> -}
+58540e6d7af1ea659c13eea80b143eab
+  $fToHtml[] :: Lucid.Base.ToHtml [CustomData.MangaInfo]
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [CustomData.MangaInfo]
+                  CustomData.$fToHtml[]_$ctoHtml
+                  CustomData.$fToHtml[]_$ctoHtml -}
+7b216473ebbafcfc5cf879f5b7cee452
+  $fToHtml[]0 :: Lucid.Base.ToHtml [CustomData.MangaChapter]
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [CustomData.MangaChapter]
+                  CustomData.$fToHtml[]0_$ctoHtml
+                  CustomData.$fToHtml[]0_$ctoHtml -}
+7b216473ebbafcfc5cf879f5b7cee452
+  $fToHtml[]0_$ctoHtml ::
+    GHC.Base.Monad m =>
+    [CustomData.MangaChapter] -> Lucid.Base.HtmlT m ()
+  {- Arity: 2,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,1*U> -}
+9e0613408a66bf5c3ff048eeb8b19841
+  $fToHtml[]1 ::
+    (Data.HashMap.Base.HashMap
+       Data.Text.Internal.Text Data.Text.Internal.Text
+     -> Data.ByteString.Builder.Internal.Builder,
+     ())
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Lucid.Base.$fApplicativeHtmlT2
+                    `cast`
+                  (<Data.HashMap.Base.HashMap
+                      Data.Text.Internal.Text Data.Text.Internal.Text>_R
+                   ->_R Sym (Data.ByteString.Builder.Internal.N:Builder[0])),
+                  GHC.Tuple.())) -}
+58540e6d7af1ea659c13eea80b143eab
+  $fToHtml[]_$ctoHtml ::
+    GHC.Base.Monad m => [CustomData.MangaInfo] -> Lucid.Base.HtmlT m ()
+  {- Arity: 2, Strictness: <L,U(A,C(C1(U)),A,C(U),A)><S,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: [CustomData.MangaInfo]) ->
+                 let {
+                   z :: m (Data.HashMap.Base.HashMap
+                             Data.Text.Internal.Text Data.Text.Internal.Text
+                           -> Data.ByteString.Builder.Internal.Builder,
+                           ())
+                   = GHC.Base.return
+                       @ m
+                       $dMonad
+                       @ (Data.HashMap.Base.HashMap
+                            Data.Text.Internal.Text Data.Text.Internal.Text
+                          -> Data.ByteString.Builder.Internal.Builder,
+                          ())
+                       CustomData.$fToHtml[]1
+                 } in
+                 letrec {
+                   go :: [CustomData.MangaInfo] -> Lucid.Base.HtmlT m ()
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [CustomData.MangaInfo]) ->
+                     case ds of wild {
+                       [] -> z `cast` (Sym (Lucid.Base.N:HtmlT[0] <m>_R <()>_N))
+                       : y ys
+                       -> Lucid.Base.$fMonoidHtmlT_$cmappend
+                            @ ()
+                            @ m
+                            CustomData.$fToHtml[]_$d~~
+                              `cast`
+                            (Sym (Data.Type.Equality.N:~[0] <*>_N) <()>_N <()>_N)
+                            $dMonad
+                            (CustomData.$fToHtmlMangaInfo_$ctoHtml @ m $dMonad y)
+                            (go ys) }
+                 } in
+                 go eta) -}
+938c3529b95c1aa5608af7f6a8dc0b19
+  $fToHtml[]_$d~~ :: (() :: *) GHC.Types.~~ (() :: *)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq# @ * @ * @ () @ () @~ <()>_N) -}
+8768ccb2d3c4f93a4f527dd9c334b2cb
+  $tc'MangaChapter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11388486106495014842##
+                   6313757138165612562##
+                   CustomData.$trModule
+                   CustomData.$tc'MangaChapter2
+                   0#
+                   CustomData.$tc'MangaChapter1) -}
+42246d62e5e66357d4827e0ed55ce727
+  $tc'MangaChapter1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5115ad161db32d80c17feee4248ae2bc
+  $tc'MangaChapter2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tc'MangaChapter3) -}
+1db58b2507821b37323673c303952717
+  $tc'MangaChapter3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MangaChapter"#) -}
+df967bb1b49c7561f591562ef79a6273
+  $tc'MangaInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17125341649712315649##
+                   14229017576845325803##
+                   CustomData.$trModule
+                   CustomData.$tc'MangaInfo2
+                   0#
+                   CustomData.$tc'MangaInfo1) -}
+f99f7ddba0002c8512f4952d62ab3c21
+  $tc'MangaInfo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+897fca2e86a71ccd155e462bd96ec6e7
+  $tc'MangaInfo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tc'MangaInfo3) -}
+307c73a8d7442fffcaeb03728e3c9e6b
+  $tc'MangaInfo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MangaInfo"#) -}
+8a82b4e8d2a0a635916c96b7420606aa
+  $tc'PageUrl :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9385952715834508930##
+                   8663904692674051697##
+                   CustomData.$trModule
+                   CustomData.$tc'PageUrl2
+                   0#
+                   CustomData.$tc'PageUrl1) -}
+569768f0f74720846711cdcfc106cffa
+  $tc'PageUrl1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ab2b82aa56c9382c6dc81c0612742547
+  $tc'PageUrl2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tc'PageUrl3) -}
+d62d5b43431c7c24a15b7d916715cf98
+  $tc'PageUrl3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PageUrl"#) -}
+4d37bf5cb5fa6baba96abb212eb9dc85
+  $tc'Person :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12732421734586822436##
+                   9940514359573572325##
+                   CustomData.$trModule
+                   CustomData.$tc'Person2
+                   0#
+                   CustomData.$tc'Person1) -}
+3ccf4c5f03960cfd991d658d7d45f919
+  $tc'Person1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d58dbc6b7233e1d17ac26dfa0b237ec3
+  $tc'Person2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tc'Person3) -}
+b05acfa49001a7d96e49dd4b53e4c365
+  $tc'Person3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Person"#) -}
+affaab245a842116af2b0bf69dddc061
+  $tcMangaChapter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10789659303587727134##
+                   3147377115745338424##
+                   CustomData.$trModule
+                   CustomData.$tcMangaChapter1
+                   0#
+                   GHC.Types.krep$*) -}
+45dfe21fdd08979939c0c4607c9ba423
+  $tcMangaChapter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tcMangaChapter2) -}
+71ae6b988dbf1f4502d269c8546a8748
+  $tcMangaChapter2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MangaChapter"#) -}
+4760a8ec0345d835725e4ca3fa5d231f
+  $tcMangaInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   323606632127053579##
+                   5357231258300972821##
+                   CustomData.$trModule
+                   CustomData.$tcMangaInfo1
+                   0#
+                   GHC.Types.krep$*) -}
+f8924555b77aca462cd36850d99704d2
+  $tcMangaInfo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tcMangaInfo2) -}
+8bdadd2624032c3de95324d57da9b7fd
+  $tcMangaInfo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MangaInfo"#) -}
+414f4b6af6990eed7936f79cea4aea06
+  $tcPageUrl :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1089305271192029254##
+                   8455621029401236413##
+                   CustomData.$trModule
+                   CustomData.$tcPageUrl1
+                   0#
+                   GHC.Types.krep$*) -}
+2a62502bebf773d636a0fc97ee674407
+  $tcPageUrl1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tcPageUrl2) -}
+3f880ae5343e97b647a67fcaad4f19e4
+  $tcPageUrl2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PageUrl"#) -}
+af7f128f5329bb21a49b21196579a293
+  $tcPerson :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4700930265658189573##
+                   10753663415954493442##
+                   CustomData.$trModule
+                   CustomData.$tcPerson1
+                   0#
+                   GHC.Types.krep$*) -}
+f2d9987f2b4b3bbb24d6b1d1fcc6bb64
+  $tcPerson1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$tcPerson2) -}
+442e459402c8ca2c7426a1d360c6afae
+  $tcPerson2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Person"#) -}
+5d3115bfcccac8610049e65c3418645f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CustomData.$trModule3
+                   CustomData.$trModule1) -}
+bd700cb01114b8a40d230daff9b0e529
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$trModule2) -}
+468ea411eac35c27874c9fcf0f2eee68
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CustomData"#) -}
+4b5a08e205631ec17ad19cec44d5853c
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CustomData.$trModule4) -}
+c0b2459620451cc8ba08d2eabcdabfd8
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+7b216473ebbafcfc5cf879f5b7cee452
+  data MangaChapter
+    = MangaChapter {chName :: Data.Text.Internal.Text,
+                    chUrlLink :: GHC.Base.String}
+58540e6d7af1ea659c13eea80b143eab
+  data MangaInfo
+    = MangaInfo {name :: Data.Text.Internal.Text,
+                 urlLink :: Data.Text.Internal.Text}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  data PageUrl
+    = PageUrl {mangaName :: GHC.Base.String,
+               chapter :: GHC.Types.Int,
+               page :: GHC.Types.Int,
+               maxPage :: GHC.Types.Int,
+               source :: Data.Text.Internal.Text}
+918a985862b8997ddc0f828d903e8df7
+  data Person
+    = Person {firstName :: GHC.Base.String,
+              lastName :: GHC.Base.String}
+7b216473ebbafcfc5cf879f5b7cee452
+  axiom CustomData.Rep_MangaChapter::
+      GHC.Generics.Rep CustomData.MangaChapter
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "MangaChapter" "CustomData" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "MangaChapter" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "chName")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Data.Text.Internal.Text)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "chUrlLink")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 GHC.Base.String)))
+58540e6d7af1ea659c13eea80b143eab
+  axiom CustomData.Rep_MangaInfo::
+      GHC.Generics.Rep CustomData.MangaInfo
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "MangaInfo" "CustomData" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "MangaInfo" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "name")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Data.Text.Internal.Text)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "urlLink")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 Data.Text.Internal.Text)))
+0e5b94a6d34f31e2eff4249dd112b3a8
+  axiom CustomData.Rep_PageUrl::
+      GHC.Generics.Rep CustomData.PageUrl
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "PageUrl" "CustomData" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "PageUrl" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               ((GHC.Generics.S1
+                   ('GHC.Generics.MetaSel
+                      ('GHC.Base.Just "mangaName")
+                      'GHC.Generics.NoSourceUnpackedness
+                      'GHC.Generics.NoSourceStrictness
+                      'GHC.Generics.DecidedLazy)
+                   (GHC.Generics.Rec0 GHC.Base.String)
+                 GHC.Generics.:*: GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       ('GHC.Base.Just "chapter")
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 GHC.Types.Int))
+                GHC.Generics.:*: (GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       ('GHC.Base.Just "page")
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 GHC.Types.Int)
+                                  GHC.Generics.:*: (GHC.Generics.S1
+                                                      ('GHC.Generics.MetaSel
+                                                         ('GHC.Base.Just "maxPage")
+                                                         'GHC.Generics.NoSourceUnpackedness
+                                                         'GHC.Generics.NoSourceStrictness
+                                                         'GHC.Generics.DecidedLazy)
+                                                      (GHC.Generics.Rec0 GHC.Types.Int)
+                                                    GHC.Generics.:*: GHC.Generics.S1
+                                                                       ('GHC.Generics.MetaSel
+                                                                          ('GHC.Base.Just "source")
+                                                                          'GHC.Generics.NoSourceUnpackedness
+                                                                          'GHC.Generics.NoSourceStrictness
+                                                                          'GHC.Generics.DecidedLazy)
+                                                                       (GHC.Generics.Rec0
+                                                                          Data.Text.Internal.Text)))))
+918a985862b8997ddc0f828d903e8df7
+  axiom CustomData.Rep_Person::
+      GHC.Generics.Rep CustomData.Person
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "Person" "CustomData" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Person" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "firstName")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 GHC.Base.String)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "lastName")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 GHC.Base.String)))
+7b216473ebbafcfc5cf879f5b7cee452
+  chName :: CustomData.MangaChapter -> Data.Text.Internal.Text
+  RecSel Left CustomData.MangaChapter
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.MangaChapter) ->
+                 case ds of wild { CustomData.MangaChapter ds1 ds2 -> ds1 }) -}
+7b216473ebbafcfc5cf879f5b7cee452
+  chUrlLink :: CustomData.MangaChapter -> GHC.Base.String
+  RecSel Left CustomData.MangaChapter
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.MangaChapter) ->
+                 case ds of wild { CustomData.MangaChapter ds1 ds2 -> ds2 }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  chapter :: CustomData.PageUrl -> GHC.Types.Int
+  RecSel Left CustomData.PageUrl
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U(U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.PageUrl) ->
+                 case ds of wild { CustomData.PageUrl ds1 ds2 ds3 ds4 ds5 ->
+                 ds2 }) -}
+918a985862b8997ddc0f828d903e8df7
+  firstName :: CustomData.Person -> GHC.Base.String
+  RecSel Left CustomData.Person
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.Person) ->
+                 case ds of wild { CustomData.Person ds1 ds2 -> ds1 }) -}
+918a985862b8997ddc0f828d903e8df7
+  lastName :: CustomData.Person -> GHC.Base.String
+  RecSel Left CustomData.Person
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.Person) ->
+                 case ds of wild { CustomData.Person ds1 ds2 -> ds2 }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  mangaName :: CustomData.PageUrl -> GHC.Base.String
+  RecSel Left CustomData.PageUrl
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLLL),1*U(1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.PageUrl) ->
+                 case ds of wild { CustomData.PageUrl ds1 ds2 ds3 ds4 ds5 ->
+                 ds1 }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  maxPage :: CustomData.PageUrl -> GHC.Types.Int
+  RecSel Left CustomData.PageUrl
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSL),1*U(A,A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.PageUrl) ->
+                 case ds of wild { CustomData.PageUrl ds1 ds2 ds3 ds4 ds5 ->
+                 ds4 }) -}
+58540e6d7af1ea659c13eea80b143eab
+  name :: CustomData.MangaInfo -> Data.Text.Internal.Text
+  RecSel Left CustomData.MangaInfo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.MangaInfo) ->
+                 case ds of wild { CustomData.MangaInfo ds1 ds2 -> ds1 }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  page :: CustomData.PageUrl -> GHC.Types.Int
+  RecSel Left CustomData.PageUrl
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLL),1*U(A,A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.PageUrl) ->
+                 case ds of wild { CustomData.PageUrl ds1 ds2 ds3 ds4 ds5 ->
+                 ds3 }) -}
+0e5b94a6d34f31e2eff4249dd112b3a8
+  source :: CustomData.PageUrl -> Data.Text.Internal.Text
+  RecSel Left CustomData.PageUrl
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.PageUrl) ->
+                 case ds of wild { CustomData.PageUrl ds1 ds2 ds3 ds4 ds5 ->
+                 ds5 }) -}
+58540e6d7af1ea659c13eea80b143eab
+  urlLink :: CustomData.MangaInfo -> Data.Text.Internal.Text
+  RecSel Left CustomData.MangaInfo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CustomData.MangaInfo) ->
+                 case ds of wild { CustomData.MangaInfo ds1 ds2 -> ds2 }) -}
+instance GHC.Generics.Generic [CustomData.MangaChapter]
+  = CustomData.$fGenericMangaChapter
+instance GHC.Generics.Generic [CustomData.MangaInfo]
+  = CustomData.$fGenericMangaInfo
+instance GHC.Generics.Generic [CustomData.PageUrl]
+  = CustomData.$fGenericPageUrl
+instance GHC.Generics.Generic [CustomData.Person]
+  = CustomData.$fGenericPerson
+instance Lucid.Base.ToHtml [CustomData.MangaChapter]
+  = CustomData.$fToHtmlMangaChapter
+instance Lucid.Base.ToHtml [CustomData.MangaInfo]
+  = CustomData.$fToHtmlMangaInfo
+instance Lucid.Base.ToHtml [CustomData.PageUrl]
+  = CustomData.$fToHtmlPageUrl
+instance Lucid.Base.ToHtml [[]] = CustomData.$fToHtml[]
+instance Lucid.Base.ToHtml [[]] = CustomData.$fToHtml[]0
+family instance GHC.Generics.Rep [CustomData.MangaChapter]
+  = CustomData.Rep_MangaChapter
+family instance GHC.Generics.Rep [CustomData.MangaInfo]
+  = CustomData.Rep_MangaInfo
+family instance GHC.Generics.Rep [CustomData.PageUrl]
+  = CustomData.Rep_PageUrl
+family instance GHC.Generics.Rep [CustomData.Person]
+  = CustomData.Rep_Person
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

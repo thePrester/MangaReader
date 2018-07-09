@@ -1,0 +1,12 @@
+Configuring text-format-0.3.1.1...
+Preprocessing library for text-format-0.3.1.1..
+Building library for text-format-0.3.1.1..
+[1 of 7] Compiling Data.Text.Format.Functions ( Data/Text/Format/Functions.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Format/Functions.o )
+[2 of 7] Compiling Data.Text.Format.Int ( Data/Text/Format/Int.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Format/Int.o )
+[3 of 7] Compiling Data.Text.Format.Types.Internal ( Data/Text/Format/Types/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Format/Types/Internal.o )
+[4 of 7] Compiling Data.Text.Format.Types ( Data/Text/Format/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Format/Types.o )
+[5 of 7] Compiling Data.Text.Buildable ( Data/Text/Buildable.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Buildable.o )
+[6 of 7] Compiling Data.Text.Format.Params ( Data/Text/Format/Params.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Format/Params.o )
+[7 of 7] Compiling Data.Text.Format ( Data/Text/Format.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Text/Format.o )
+Installing library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/text-format-0.3.1.1-4sZrhMLSUMK5aq4WcJ3M50
+Registering library for text-format-0.3.1.1..

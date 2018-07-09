@@ -1,0 +1,1061 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-09 01:34:29.610715 UTC
+
+interface main:Api 8022
+  interface hash: 32e72bb4fcfa6a4194e3e6623e0035fe
+  ABI hash: 91cc8628d9336d8ab0c353f27b6d1957
+  export-list hash: b38a67fea32db10a589fc777f14db154
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8a8ebb0581bb48737638b109bfa05fa4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Api.getChapterLen
+  Api.getMangaChapters
+  Api.getMangaImg
+  Api.getMangaTitles
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 curl-1.3.8
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.3.0
+                      dlist-0.8.0.3 ghc-prim-0.5.1.1 integer-gmp-1.0.1.0
+                      old-locale-1.0.0.7 primitive-0.6.2.0 regex-base-0.93.2
+                      scalpel-0.5.1 scalpel-core-0.5.1 tagsoup-0.14.2 text-1.2.2.2
+                      transformers-0.5.2.0 vector-0.12.0.1
+orphans: vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         text-1.2.2.2:Data.Text.Lazy text-1.2.2.2:Data.Text
+         binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         dlist-0.8.0.3:Data.DList primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array text-1.2.2.2:Data.Text
+                         text-1.2.2.2:Data.Text.Lazy vector-0.12.0.1:Data.Vector
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.Maybe 07738c5485acb328136bb15596f8b845
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  scalpel-0.5.1:Text.HTML.Scalpel 590890d54f6b35716e19af4846922106
+import  -/  scalpel-0.5.1:Text.HTML.Scalpel.Internal.Scrape.URL 1fff93ef636d9c19d2b6120557f9af09
+import  -/  scalpel-core-0.5.1:Text.HTML.Scalpel.Internal.Scrape 0c175cb40467c014d8a6a3719c9a5efd
+import  -/  scalpel-core-0.5.1:Text.HTML.Scalpel.Internal.Select.Combinators ccb6f56fe2d456cabf17e4fb755ec511
+import  -/  scalpel-core-0.5.1:Text.HTML.Scalpel.Internal.Select.Types 59008c4e6d6d2a624ff6f360bfb66d5a
+3854ba2c12708d391d000e1fdb6eb2b8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Api.$trModule3 Api.$trModule1) -}
+63c1cf43625873bda9e07707f9305115
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Api.$trModule2) -}
+20c177218a85d67ca6bfd6d16fdf083a
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Api"#) -}
+e03fd1a6f471afc259aed82f6da5037e
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Api.$trModule4) -}
+c7014a0eb71c3b7f7117b9644c0133da
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+4a9c042986626d4bccebaefddd1f3da5
+  getChapterLen ::
+    GHC.Base.String
+    -> GHC.Types.Int -> GHC.Types.IO (GHC.Base.Maybe GHC.Base.String)
+  {- Arity: 3, Strictness: <L,1*U><L,1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Api.getChapterLen1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)) -}
+fc4cd0cf3f05d22ddb04e7375fa5153a
+  getChapterLen1 ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe GHC.Base.String #)
+  {- Arity: 3, Strictness: <L,1*U><L,1*U(U)><S,U>,
+     Unfolding: (\ (title :: GHC.Base.String)
+                   (ch :: GHC.Types.Int)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Text.HTML.Scalpel.Internal.Scrape.URL.$wscrapeURLWithConfig
+                   @ GHC.Base.String
+                   @ GHC.Base.String
+                   Text.StringLike.$fStringLike[]
+                   Api.getChapterLen19
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Api.mangaBaseURL
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         title
+                         (GHC.CString.unpackAppendCString#
+                            Api.getChapterLen17
+                            (case ch of ww2 { GHC.Types.I# ww3 ->
+                             case GHC.Show.$wshowSignedInt
+                                    0#
+                                    ww3
+                                    (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                             GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))))
+                   Api.getChapterLen2
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                             <GHC.Base.String>_R <GHC.Base.String>_R))
+                   eta2) -}
+24e876975275fc9a7639c41b16c08b88
+  getChapterLen10 ::
+    Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Combinators.$w@=
+                        Api.getChapterLen13
+                        Api.getChapterLen11 of ww { Unit# ww1 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.MkAttributePredicate
+                   ww1 }) -}
+d77db7473467141d15eb3d8cccc28c08
+  getChapterLen11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getChapterLen12) -}
+bfd4d64a65814f5f59eb77f4188f7a70
+  getChapterLen12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("selectpage"#) -}
+d50eeec222abf56ec1f1f81ff96aaeb8
+  getChapterLen13 ::
+    Text.HTML.Scalpel.Internal.Select.Types.AttributeName
+  {- Strictness: m2,
+     Unfolding: (Text.HTML.Scalpel.Internal.Select.Types.AttributeString
+                   Api.getChapterLen14) -}
+1574fddd3ff96a8579eb39fe31c54bf6
+  getChapterLen14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getChapterLen15) -}
+8186c102b115c4279614b8e8ecf54712
+  getChapterLen15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("id"#) -}
+fe7d57ead03c59be57444a368a7417d7
+  getChapterLen16 ::
+    GHC.Types.Char -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>m2,
+     Unfolding: (\ (x :: GHC.Types.Char)
+                   (ys :: [GHC.Types.Char])[OneShot] ->
+                 GHC.Types.: @ GHC.Types.Char (GHC.Unicode.toLower x) ys) -}
+f3ae5c2a97b9404be8e557dc759274d1
+  getChapterLen17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+5d7154c29824584c2466d5a3d98d3f33
+  getChapterLen18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("http://www.mangareader.net/"#) -}
+e6d45f1e1b4aa3ff191c3c27db1594c5
+  getChapterLen19 ::
+    Text.HTML.Scalpel.Internal.Scrape.URL.Config GHC.Base.String
+  {- Strictness: m,
+     Unfolding: (Text.HTML.Scalpel.Internal.Scrape.URL.Config
+                   @ GHC.Base.String
+                   Text.HTML.Scalpel.Internal.Scrape.URL.$fDefaultConfig1
+                   Api.getChapterLen20) -}
+f64a81111daf26909d3562d7e9a56385
+  getChapterLen2 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec GHC.Base.String
+    -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(1*U(U,U,U),1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w4 :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                            GHC.Base.String) ->
+                 Text.HTML.Scalpel.Internal.Scrape.$wchroot
+                   @ GHC.Base.String
+                   @ GHC.Base.String
+                   Text.StringLike.$fStringLike[]
+                   Api.getChapterLen7
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Select.Types.N:Selector[0]))
+                   Api.getChapterLen3
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                             <[GHC.Types.Char]>_R <GHC.Base.String>_R))
+                   w4) -}
+b58af736a5b6ac4ad4de527aa3db63de
+  getChapterLen20 ::
+    Text.HTML.Scalpel.Internal.Scrape.URL.Decoder GHC.Base.String
+  {- Arity: 1,
+     Unfolding: (Text.HTML.Scalpel.Internal.Scrape.URL.defaultDecoder
+                   @ GHC.Base.String
+                   Text.StringLike.$fStringLike[]) -}
+0cb8e76dc90fcc575bf15984a9934a95
+  getChapterLen3 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec [GHC.Types.Char]
+    -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(1*U(U,U,U),1*U,U)>,
+     Unfolding: (\ (tags :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                              [GHC.Types.Char]) ->
+                 case Text.HTML.Scalpel.Internal.Select.select1
+                        @ GHC.Base.String
+                        0#
+                        (Text.HTML.Scalpel.Internal.Select.selectNodes
+                           @ GHC.Base.String
+                           Text.StringLike.$fStringLike[]
+                           Api.getChapterLen4
+                           tags
+                           (GHC.Types.[]
+                              @ (Text.HTML.Scalpel.Internal.Select.TagSpec
+                                   GHC.Base.String))) of wild {
+                   [] -> GHC.Base.Nothing @ GHC.Base.String
+                   : x ds
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (case x of ww { (,,) ww1 ww2 ww3 ->
+                         case ww1 of ww4 { Data.Vector.Vector ww5 ww6 ww7 ->
+                         letrec {
+                           $wfoldlM'_loop :: GHC.Types.SPEC
+                                             -> GHC.Base.String -> GHC.Prim.Int# -> [GHC.Types.Char]
+                             <join 3> {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U>,
+                                         Inline: [0] -}
+                           = \ (w1 :: GHC.Types.SPEC)
+                               (w2 :: GHC.Base.String)
+                               (ww11 :: GHC.Prim.Int#) ->
+                             case w1 of ds5 { DEFAULT ->
+                             case w2 of z2 { DEFAULT ->
+                             case ww11 of ds1 {
+                               DEFAULT
+                               -> let {
+                                    i' :: GHC.Prim.Int# = GHC.Prim.-# ds1 1#
+                                  } in
+                                  case GHC.Prim.indexArray#
+                                         @ (Text.HTML.Scalpel.Internal.Select.TagInfo
+                                              GHC.Base.String)
+                                         ww7
+                                         (GHC.Prim.+# ww5 i') of ds3 { Unit# ipv ->
+                                  case ipv of wild1 { Text.HTML.Scalpel.Internal.Select.TagInfo ds2 ds4 dt ds6 ->
+                                  case ds2 of wild2 {
+                                    DEFAULT -> $wfoldlM'_loop GHC.Types.SPEC z2 i'
+                                    Text.HTML.TagSoup.Type.TagText str1
+                                    -> $wfoldlM'_loop
+                                         GHC.Types.SPEC
+                                         (GHC.Base.++ @ GHC.Types.Char str1 z2)
+                                         i' } } }
+                               0#
+                               -> Api.getChapterLen_go1
+                                    (Api.getChapterLen_go z2)
+                                    (GHC.List.lastError @ [GHC.Types.Char]) } } }
+                         } in
+                         $wfoldlM'_loop
+                           GHC.Types.SPEC
+                           (GHC.Types.[] @ GHC.Types.Char)
+                           ww6 } }) }) -}
+df3d648ca6277a7c1a27d11e6499b1b5
+  getChapterLen4 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Types.$wtagSelector
+                        Api.getChapterLen5 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   ww1
+                   ww2 }) -}
+fa3726a925733f4f1fb3befd569ba6d4
+  getChapterLen5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getChapterLen6) -}
+a464b00660dcb2ed02868e31c32a3a83
+  getChapterLen6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("div"#) -}
+1696e7cd03d87e0237b2bde525c4004a
+  getChapterLen7 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   Api.getChapterLen8
+                   (GHC.Types.[]
+                      @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode)) -}
+ac76d21ca9ff0db1cb0cca4130dd0ce1
+  getChapterLen8 ::
+    Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+  {- Unfolding: (case GHC.CString.unpackFoldrCString#
+                        @ [GHC.Types.Char]
+                        Api.getChapterLen6
+                        Api.getChapterLen16
+                        (GHC.Types.[] @ GHC.Types.Char) of dt1 { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Text.HTML.Scalpel.Internal.Select.Types.$wouter1
+                           ipv1
+                           4#
+                           dt1
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt2 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   dt2
+                   Api.getChapterLen9 } } }) -}
+46cca45968eb0b622f8b3e267239c2b0
+  getChapterLen9 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+                   Api.getChapterLen10
+                   (GHC.Types.[]
+                      @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate)) -}
+f0538c2a190a32c97e2ddde179c907cf
+  getChapterLen_go :: [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,1*U>m2 -}
+0f3e19b6bba1163fa91354173c93c716
+  getChapterLen_go1 ::
+    [[GHC.Types.Char]] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+2fb247990434e05a029112c7cf41581a
+  getMangaChapters ::
+    GHC.Base.String
+    -> GHC.Types.IO
+         (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])
+  {- Arity: 2, Strictness: <L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Api.getMangaChapters1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]>_R)) -}
+9d8cdfac1aceeb82945c7cf81ec8ed49
+  getMangaChapters1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)] #)
+  {- Arity: 2, Strictness: <L,1*U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (title :: GHC.Base.String)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Text.HTML.Scalpel.Internal.Scrape.URL.$wscrapeURLWithConfig
+                   @ GHC.Base.String
+                   @ [(GHC.Base.String, GHC.Base.String)]
+                   Text.StringLike.$fStringLike[]
+                   Api.getChapterLen19
+                   (GHC.Base.augment
+                      @ GHC.Types.Char
+                      (\ @ b
+                         (c :: GHC.Types.Char -> b -> b)[OneShot]
+                         (n :: b)[OneShot] ->
+                       GHC.Base.foldr @ GHC.Types.Char @ b c n Api.mangaBaseURL)
+                      title)
+                   Api.getMangaChapters2
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                             <GHC.Base.String>_R <[(GHC.Base.String, GHC.Base.String)]>_R))
+                   eta2) -}
+7bf7f7128881c8ea3429e3f073899930
+  getMangaChapters10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Api.getMangaChapters11) -}
+72fd9991cff697dc7f96b7fb155c0b9e
+  getMangaChapters11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("listing"#) -}
+53277ccd33668a3bc8e8fbfad350b7e0
+  getMangaChapters12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("table"#) -}
+2dbad41e6e33c0d19be2a7bc8c194494
+  getMangaChapters13 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec [GHC.Types.Char]
+    -> GHC.Base.Maybe (GHC.Base.String, GHC.Base.String)
+  {- Arity: 1, Strictness: <L,U(U(U,U,U),U,U)>,
+     Unfolding: (\ (tags :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                              [GHC.Types.Char]) ->
+                 case Text.HTML.Scalpel.Internal.Select.select1
+                        @ GHC.Base.String
+                        0#
+                        (Text.HTML.Scalpel.Internal.Select.selectNodes
+                           @ GHC.Base.String
+                           Text.StringLike.$fStringLike[]
+                           Api.getMangaChapters20
+                           tags
+                           (GHC.Types.[]
+                              @ (Text.HTML.Scalpel.Internal.Select.TagSpec
+                                   GHC.Base.String))) of wild {
+                   [] -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                   : x ds
+                   -> case Text.HTML.Scalpel.Internal.Select.select1
+                             @ GHC.Base.String
+                             0#
+                             (Text.HTML.Scalpel.Internal.Select.selectNodes
+                                @ GHC.Base.String
+                                Text.StringLike.$fStringLike[]
+                                Api.getMangaChapters17
+                                tags
+                                (GHC.Types.[]
+                                   @ (Text.HTML.Scalpel.Internal.Select.TagSpec
+                                        GHC.Base.String))) of wild1 {
+                        [] -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                        : x1 ds1
+                        -> case x1 of ww { (,,) ww1 ww2 ww3 ->
+                           case ww1 of ww4 { Data.Vector.Vector ww5 ww6 ww7 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<# 0# ww6) of wild2 {
+                             GHC.Types.False
+                             -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                             GHC.Types.True
+                             -> case GHC.Prim.indexArray#
+                                       @ (Text.HTML.Scalpel.Internal.Select.TagInfo GHC.Base.String)
+                                       ww7
+                                       ww5 of ds3 { Unit# ipv ->
+                                case ipv of wild3 { Text.HTML.Scalpel.Internal.Select.TagInfo ds2 ds4 dt ds5 ->
+                                case ds2 of wild4 {
+                                  DEFAULT -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                                  Text.HTML.TagSoup.Type.TagOpen ds6 ds7
+                                  -> GHC.Base.Just
+                                       @ ([GHC.Types.Char], GHC.Base.String)
+                                       (case x of ww11 { (,,) ww12 ww13 ww14 ->
+                                        case ww12 of ww15 { Data.Vector.Vector ww16 ww17 ww18 ->
+                                        letrec {
+                                          $wfoldlM'_loop :: GHC.Types.SPEC
+                                                            -> GHC.Base.String
+                                                            -> GHC.Prim.Int#
+                                                            -> [GHC.Types.Char]
+                                            <join 3> {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U>,
+                                                        Inline: [0] -}
+                                          = \ (w1 :: GHC.Types.SPEC)
+                                              (w2 :: GHC.Base.String)
+                                              (ww19 :: GHC.Prim.Int#) ->
+                                            case w1 of ds8 { DEFAULT ->
+                                            case w2 of z2 { DEFAULT ->
+                                            case ww19 of ds9 {
+                                              DEFAULT
+                                              -> let {
+                                                   i' :: GHC.Prim.Int# = GHC.Prim.-# ds9 1#
+                                                 } in
+                                                 case GHC.Prim.indexArray#
+                                                        @ (Text.HTML.Scalpel.Internal.Select.TagInfo
+                                                             GHC.Base.String)
+                                                        ww18
+                                                        (GHC.Prim.+#
+                                                           ww16
+                                                           i') of ds10 { Unit# ipv1 ->
+                                                 case ipv1 of wild5 { Text.HTML.Scalpel.Internal.Select.TagInfo ds11 ds12 dt1 ds13 ->
+                                                 case ds11 of wild6 {
+                                                   DEFAULT -> $wfoldlM'_loop GHC.Types.SPEC z2 i'
+                                                   Text.HTML.TagSoup.Type.TagText str1
+                                                   -> $wfoldlM'_loop
+                                                        GHC.Types.SPEC
+                                                        (GHC.Base.++ @ GHC.Types.Char str1 z2)
+                                                        i' } } }
+                                              0#
+                                              -> GHC.List.dropWhile
+                                                   @ GHC.Types.Char
+                                                   Api.getMangaChapters16
+                                                   z2 } } }
+                                        } in
+                                        $wfoldlM'_loop
+                                          GHC.Types.SPEC
+                                          (GHC.Types.[] @ GHC.Types.Char)
+                                          ww17 } },
+                                        case GHC.List.lookup
+                                               @ GHC.Base.String
+                                               @ GHC.Base.String
+                                               GHC.Classes.$fEq[]_$s$fEq[]1
+                                               Api.getMangaChapters14
+                                               ds7 of wild5 {
+                                          GHC.Base.Nothing -> GHC.Types.[] @ GHC.Types.Char
+                                          GHC.Base.Just v -> v }) } } } } } } } }) -}
+955f5532ea7861fc56b07a8a2e82b066
+  getMangaChapters14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Api.getMangaChapters15) -}
+0587a99881b324aab8aa3104550f3fe1
+  getMangaChapters15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("href"#) -}
+587ae3018609c0b3a584faded77c1093
+  getMangaChapters16 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Char) ->
+                 case ds of wild { GHC.Types.C# x ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Types.False '\n'# -> GHC.Types.True } }) -}
+60270258afd8b9336eb1a245e0272406
+  getMangaChapters17 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Types.$wtagSelector
+                        Api.getMangaChapters18 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   ww1
+                   ww2 }) -}
+8d8900f6db9e6d85e27d8f06a449b8ca
+  getMangaChapters18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Api.getMangaChapters19) -}
+b6ec988981eb0e21d98fd134ac34f786
+  getMangaChapters19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("a"#) -}
+529487f9aaa4ba69cc0770b28050a56d
+  getMangaChapters2 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec GHC.Base.String
+    -> GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+  {- Arity: 1, Strictness: <L,1*U(1*U(U,U,U),1*U,U)>m2, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                           GHC.Base.String) ->
+                 GHC.Base.Just
+                   @ [(GHC.Base.String, GHC.Base.String)]
+                   (Data.Maybe.mapMaybe
+                      @ (Text.HTML.Scalpel.Internal.Select.TagVector GHC.Base.String,
+                         Text.HTML.Scalpel.Internal.Select.TagForest,
+                         Text.HTML.Scalpel.Internal.Select.SelectContext)
+                      @ (GHC.Base.String, GHC.Base.String)
+                      Api.getMangaChapters13
+                      (Text.HTML.Scalpel.Internal.Select.select1
+                         @ GHC.Base.String
+                         0#
+                         (Text.HTML.Scalpel.Internal.Select.selectNodes
+                            @ GHC.Base.String
+                            Text.StringLike.$fStringLike[]
+                            Api.getMangaChapters3
+                            w
+                            (GHC.Types.[]
+                               @ (Text.HTML.Scalpel.Internal.Select.TagSpec
+                                    GHC.Base.String)))))) -}
+275e587be30e5392b0408812bfa05b46
+  getMangaChapters20 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Types.$wtagSelector
+                        Api.getMangaChapters21 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   ww1
+                   ww2 }) -}
+96300a513ba87f05e6008d9c00e5ba76
+  getMangaChapters21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Api.getMangaChapters22) -}
+b7812b56a04560f24b5fcb92e8191c11
+  getMangaChapters22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("td"#) -}
+cbbaa20d10395f258c3c4dad83721610
+  getMangaChapters3 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   Api.getMangaChapters7
+                   Api.getMangaChapters4) -}
+515a4960893d34a6030bfe83580567e2
+  getMangaChapters4 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Types.$wtagSelector
+                        Api.getMangaChapters5 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   ww1
+                   ww2 }) -}
+2654372e4efd7beb4480da288b4cf582
+  getMangaChapters5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaChapters6) -}
+a2a76de862792932bb80e65b57720706
+  getMangaChapters6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("tr"#) -}
+028ac518ac1273709ad021b45686d9f5
+  getMangaChapters7 ::
+    Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+  {- Unfolding: (case GHC.CString.unpackFoldrCString#
+                        @ [GHC.Types.Char]
+                        Api.getMangaChapters12
+                        Api.getChapterLen16
+                        (GHC.Types.[] @ GHC.Types.Char) of dt1 { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Text.HTML.Scalpel.Internal.Select.Types.$wouter1
+                           ipv1
+                           4#
+                           dt1
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt2 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   dt2
+                   Api.getMangaChapters8 } } }) -}
+ea2381b45dd8618e97b371f85accfa5d
+  getMangaChapters8 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+                   Api.getMangaChapters9
+                   (GHC.Types.[]
+                      @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate)) -}
+3c0f4cff004254221119b1a82f99da53
+  getMangaChapters9 ::
+    Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Combinators.$w@=
+                        Api.getChapterLen13
+                        Api.getMangaChapters10 of ww { Unit# ww1 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.MkAttributePredicate
+                   ww1 }) -}
+2757f9ecfb7ab733f28868d577e4d20d
+  getMangaImg ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.IO (GHC.Base.Maybe GHC.Base.String)
+  {- Arity: 4, Strictness: <L,1*U><L,1*U(U)><L,1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Api.getMangaImg1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R)) -}
+21068c5efea8b9a57be721fcbd706fba
+  getMangaImg1 ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe GHC.Base.String #)
+  {- Arity: 4, Strictness: <L,1*U><L,1*U(U)><L,1*U(U)><S,U>,
+     Unfolding: (\ (title :: GHC.Base.String)
+                   (ch :: GHC.Types.Int)
+                   (pg :: GHC.Types.Int)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Text.HTML.Scalpel.Internal.Scrape.URL.$wscrapeURLWithConfig
+                   @ GHC.Base.String
+                   @ GHC.Base.String
+                   Text.StringLike.$fStringLike[]
+                   Api.getChapterLen19
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Api.mangaBaseURL
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         title
+                         (GHC.CString.unpackAppendCString#
+                            Api.getChapterLen17
+                            (case ch of ww2 { GHC.Types.I# ww3 ->
+                             case GHC.Show.$wshowSignedInt
+                                    0#
+                                    ww3
+                                    (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                             GHC.Base.++
+                               @ GHC.Types.Char
+                               (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                               (GHC.CString.unpackAppendCString#
+                                  Api.getChapterLen17
+                                  (case pg of ww1 { GHC.Types.I# ww8 ->
+                                   case GHC.Show.$wshowSignedInt
+                                          0#
+                                          ww8
+                                          (GHC.Types.[]
+                                             @ GHC.Types.Char) of ww9 { (#,#) ww10 ww11 ->
+                                   GHC.Types.: @ GHC.Types.Char ww10 ww11 } })) } }))))
+                   Api.getMangaImg2
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                             <GHC.Base.String>_R <GHC.Base.String>_R))
+                   eta2) -}
+e84f65494503482d5cb1c02a296a94b4
+  getMangaImg10 :: Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+  {- Unfolding: (case GHC.CString.unpackFoldrCString#
+                        @ [GHC.Types.Char]
+                        Api.getChapterLen6
+                        Api.getChapterLen16
+                        (GHC.Types.[] @ GHC.Types.Char) of dt1 { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Text.HTML.Scalpel.Internal.Select.Types.$wouter1
+                           ipv1
+                           4#
+                           dt1
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt2 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   dt2
+                   Api.getMangaImg11 } } }) -}
+252c524f4f86dcda812bddf24ee81c98
+  getMangaImg11 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+                   Api.getMangaImg12
+                   (GHC.Types.[]
+                      @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate)) -}
+11ee8a280dcc4e6c7f1be1fb953d568a
+  getMangaImg12 ::
+    Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Combinators.$w@=
+                        Api.getChapterLen13
+                        Api.getMangaImg13 of ww { Unit# ww1 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.MkAttributePredicate
+                   ww1 }) -}
+e9e9ba2741349374f6cf4cce20da3ca4
+  getMangaImg13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaImg14) -}
+dcdd9dde21b60ce1f443778cbd997a98
+  getMangaImg14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("imgholder"#) -}
+a59169959e3b6b4fda8d7cfcfd4cc0cb
+  getMangaImg2 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec GHC.Base.String
+    -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(1*U(U,U,U),1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (w4 :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                            GHC.Base.String) ->
+                 Text.HTML.Scalpel.Internal.Scrape.$wchroot
+                   @ GHC.Base.String
+                   @ GHC.Base.String
+                   Text.StringLike.$fStringLike[]
+                   Api.getMangaImg6
+                     `cast`
+                   (Nth:3
+                        (Nth:3
+                             (Trans
+                                  (Sym (Text.HTML.Scalpel.Internal.Select.Types.N:Selector[0])
+                                   ->_R Sym (Text.HTML.Scalpel.Internal.Select.Types.N:Selector[0])
+                                   ->_R <[Text.HTML.Scalpel.Internal.Select.Types.SelectNode]>_R)
+                                  (<Text.HTML.Scalpel.Internal.Select.Types.Selector>_R
+                                   ->_R <Text.HTML.Scalpel.Internal.Select.Types.Selector>_R
+                                   ->_R Sym (Text.HTML.Scalpel.Internal.Select.Types.N:Selector[0])))))
+                   Api.getMangaImg3
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                             <[GHC.Types.Char]>_R <GHC.Base.String>_R))
+                   w4) -}
+c55ff1a959188eb4ccd584f75c0e9cce
+  getMangaImg3 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec [GHC.Types.Char]
+    -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (tags :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                              [GHC.Types.Char]) ->
+                 Api.getMangaImg_ds
+                   `cast`
+                 (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                      <[GHC.Types.Char]>_R <GHC.Base.String>_R)
+                   tags) -}
+4a20f0f0acfc88893678171c454f322f
+  getMangaImg4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaImg5) -}
+e4c4aa8ec731a610b34ab5ca1663f3d4
+  getMangaImg5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("src"#) -}
+32eed70fc8219e38c6d8455b5b2b553c
+  getMangaImg6 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   Api.getMangaImg10
+                   Api.getMangaImg7) -}
+48314e4ff3a48aa7d432889a1c9dbf68
+  getMangaImg7 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Types.$wtagSelector
+                        Api.getMangaImg8 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   ww1
+                   ww2 }) -}
+e124af1964ff7fab52363acbf5bd0fc0
+  getMangaImg8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaImg9) -}
+b3f80e0df8febed98eddbccb6821dcbd
+  getMangaImg9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("img"#) -}
+48d3df53df5b9b2bd518610ed73b6700
+  getMangaImg_ds ::
+    Text.HTML.Scalpel.Internal.Scrape.Scraper
+      [GHC.Types.Char] GHC.Base.String
+  {- Unfolding: (Text.HTML.Scalpel.Internal.Scrape.$wattr
+                   @ GHC.Base.String
+                   Text.StringLike.$fStringLike[]
+                   Api.getMangaImg4
+                   Text.HTML.Scalpel.Internal.Select.Types.anySelector1
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Select.Types.N:Selector[0]))) -}
+8298c4475b7f0d1846bc05d7b5ea08ce
+  getMangaTitles ::
+    GHC.Types.IO (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Api.getMangaTitles1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]>_R)) -}
+4d54f84311c7c864ba81e1155097a2c9
+  getMangaTitles1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Text.HTML.Scalpel.Internal.Scrape.URL.$wscrapeURLWithConfig
+                   @ GHC.Base.String
+                   @ [(GHC.Base.String, GHC.Base.String)]
+                   Text.StringLike.$fStringLike[]
+                   Api.getChapterLen19
+                   (GHC.CString.unpackCString# Api.getMangaTitles17)
+                   Api.getMangaTitles2
+                     `cast`
+                   (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                             <GHC.Base.String>_R <[(GHC.Base.String, GHC.Base.String)]>_R))
+                   eta2) -}
+ff2c227402964623ff49b7492d600af6
+  getMangaTitles10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaTitles11) -}
+5c6af996077ed868ecb81363975cdba6
+  getMangaTitles11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("series_alpha"#) -}
+7b8d574e67a767bec7b566239cf7a570
+  getMangaTitles12 ::
+    Text.HTML.Scalpel.Internal.Select.Types.AttributeName
+  {- Strictness: m2,
+     Unfolding: (Text.HTML.Scalpel.Internal.Select.Types.AttributeString
+                   Api.getMangaTitles13) -}
+06d6f1fd1f89a66dcae4f68f45c8cea5
+  getMangaTitles13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaTitles14) -}
+ea214b6715092bc5006f1cd655d20d01
+  getMangaTitles14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("class"#) -}
+181e59a0ab6406ee043cd4a9aaaf7770
+  getMangaTitles15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ul"#) -}
+09e5fd75cc150d706a5c0cce291f9a9a
+  getMangaTitles16 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec [GHC.Types.Char]
+    -> GHC.Base.Maybe (GHC.Base.String, GHC.Base.String)
+  {- Arity: 1, Strictness: <L,1*U(1*U(U,U,U),1*U,U)>,
+     Unfolding: (\ (tags :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                              [GHC.Types.Char]) ->
+                 case Text.HTML.Scalpel.Internal.Select.select1
+                        @ GHC.Base.String
+                        0#
+                        (Text.HTML.Scalpel.Internal.Select.selectNodes
+                           @ GHC.Base.String
+                           Text.StringLike.$fStringLike[]
+                           Api.getMangaChapters17
+                           tags
+                           (GHC.Types.[]
+                              @ (Text.HTML.Scalpel.Internal.Select.TagSpec
+                                   GHC.Base.String))) of wild {
+                   [] -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                   : x ds
+                   -> case x of ww { (,,) ww1 ww2 ww3 ->
+                      case ww1 of ww4 { Data.Vector.Vector ww5 ww6 ww7 ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# 0# ww6) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                        GHC.Types.True
+                        -> case GHC.Prim.indexArray#
+                                  @ (Text.HTML.Scalpel.Internal.Select.TagInfo GHC.Base.String)
+                                  ww7
+                                  ww5 of ds3 { Unit# ipv ->
+                           case ipv of wild2 { Text.HTML.Scalpel.Internal.Select.TagInfo ds1 ds2 dt ds4 ->
+                           case ds1 of wild3 {
+                             DEFAULT -> GHC.Base.Nothing @ (GHC.Base.String, GHC.Base.String)
+                             Text.HTML.TagSoup.Type.TagOpen ds5 ds6
+                             -> GHC.Base.Just
+                                  @ (GHC.Base.String, GHC.Base.String)
+                                  (letrec {
+                                     $wfoldlM'_loop :: GHC.Types.SPEC
+                                                       -> GHC.Base.String
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Base.String
+                                       <join 3> {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U>,
+                                                   Inline: [0] -}
+                                     = \ (w1 :: GHC.Types.SPEC)
+                                         (w2 :: GHC.Base.String)
+                                         (ww11 :: GHC.Prim.Int#) ->
+                                       case w1 of ds7 { DEFAULT ->
+                                       case w2 of z2 { DEFAULT ->
+                                       case ww11 of ds8 {
+                                         DEFAULT
+                                         -> let {
+                                              i' :: GHC.Prim.Int# = GHC.Prim.-# ds8 1#
+                                            } in
+                                            case GHC.Prim.indexArray#
+                                                   @ (Text.HTML.Scalpel.Internal.Select.TagInfo
+                                                        GHC.Base.String)
+                                                   ww7
+                                                   (GHC.Prim.+# ww5 i') of ds9 { Unit# ipv1 ->
+                                            case ipv1 of wild4 { Text.HTML.Scalpel.Internal.Select.TagInfo ds10 ds11 dt1 ds12 ->
+                                            case ds10 of wild5 {
+                                              DEFAULT -> $wfoldlM'_loop GHC.Types.SPEC z2 i'
+                                              Text.HTML.TagSoup.Type.TagText str1
+                                              -> $wfoldlM'_loop
+                                                   GHC.Types.SPEC
+                                                   (GHC.Base.++ @ GHC.Types.Char str1 z2)
+                                                   i' } } }
+                                         0# -> z2 } } }
+                                   } in
+                                   $wfoldlM'_loop
+                                     GHC.Types.SPEC
+                                     (GHC.Types.[] @ GHC.Types.Char)
+                                     ww6,
+                                   case GHC.List.lookup
+                                          @ GHC.Base.String
+                                          @ GHC.Base.String
+                                          GHC.Classes.$fEq[]_$s$fEq[]1
+                                          Api.getMangaChapters14
+                                          ds6 of wild4 {
+                                     GHC.Base.Nothing -> GHC.Types.[] @ GHC.Types.Char
+                                     GHC.Base.Just v -> v }) } } } } } } }) -}
+9a3939c366332cbb3c37ff088a93d45a
+  getMangaTitles17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("http://www.mangareader.net/alphabetical"#) -}
+b8c224b2d71330f18d8f7faefb82a41c
+  getMangaTitles2 ::
+    Text.HTML.Scalpel.Internal.Select.TagSpec GHC.Base.String
+    -> GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+  {- Arity: 1, Strictness: <L,1*U(1*U(U,U,U),1*U,U)>m2,
+     Unfolding: (\ (eta :: Text.HTML.Scalpel.Internal.Select.TagSpec
+                             GHC.Base.String)[OneShot] ->
+                 GHC.Base.Just
+                   @ [(GHC.Base.String, GHC.Base.String)]
+                   (Data.Maybe.mapMaybe
+                      @ (Text.HTML.Scalpel.Internal.Select.TagVector GHC.Base.String,
+                         Text.HTML.Scalpel.Internal.Select.TagForest,
+                         Text.HTML.Scalpel.Internal.Select.SelectContext)
+                      @ (GHC.Base.String, GHC.Base.String)
+                      Api.getMangaTitles16
+                      (Text.HTML.Scalpel.Internal.Select.select1
+                         @ GHC.Base.String
+                         0#
+                         (Text.HTML.Scalpel.Internal.Select.selectNodes
+                            @ GHC.Base.String
+                            Text.StringLike.$fStringLike[]
+                            Api.getMangaTitles3
+                            eta
+                            (GHC.Types.[]
+                               @ (Text.HTML.Scalpel.Internal.Select.TagSpec
+                                    GHC.Base.String)))))) -}
+371ba39787180b7a3ae09d5f9f9badd4
+  getMangaTitles3 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   Api.getMangaTitles7
+                   Api.getMangaTitles4) -}
+d4969c886b3ffef17634ae841d866c0a
+  getMangaTitles4 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.SelectNode]
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Types.$wtagSelector
+                        Api.getMangaTitles5 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   ww1
+                   ww2 }) -}
+a9cbd52343e830d72171e6ff0411bec6
+  getMangaTitles5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getMangaTitles6) -}
+e08f1490ddf078b795bf575c73f36124
+  getMangaTitles6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("li"#) -}
+d9aa2de8b4f128c2dad12ccb9c1f3bf0
+  getMangaTitles7 ::
+    Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+  {- Unfolding: (case GHC.CString.unpackFoldrCString#
+                        @ [GHC.Types.Char]
+                        Api.getMangaTitles15
+                        Api.getChapterLen16
+                        (GHC.Types.[] @ GHC.Types.Char) of dt1 { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Text.HTML.Scalpel.Internal.Select.Types.$wouter1
+                           ipv1
+                           4#
+                           dt1
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt2 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.SelectNode
+                   dt2
+                   Api.getMangaTitles8 } } }) -}
+c54ba6e369fb09a1e2aad8acae87ca6c
+  getMangaTitles8 ::
+    [Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+                   Api.getMangaTitles9
+                   (GHC.Types.[]
+                      @ Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate)) -}
+57ed38ff7801e76c300d451251049ade
+  getMangaTitles9 ::
+    Text.HTML.Scalpel.Internal.Select.Types.AttributePredicate
+  {- Unfolding: (case Text.HTML.Scalpel.Internal.Select.Combinators.$w@=
+                        Api.getMangaTitles12
+                        Api.getMangaTitles10 of ww { Unit# ww1 ->
+                 Text.HTML.Scalpel.Internal.Select.Types.MkAttributePredicate
+                   ww1 }) -}
+b72a4784227262740f39da6fd6693718
+  mangaBaseURL :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Api.getChapterLen18) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

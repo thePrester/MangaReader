@@ -1,0 +1,8 @@
+Configuring servant-foreign-0.10.1...
+Preprocessing library for servant-foreign-0.10.1..
+Building library for servant-foreign-0.10.1..
+[1 of 3] Compiling Servant.Foreign.Internal ( src/Servant/Foreign/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Servant/Foreign/Internal.o )
+[2 of 3] Compiling Servant.Foreign.Inflections ( src/Servant/Foreign/Inflections.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Servant/Foreign/Inflections.o )
+[3 of 3] Compiling Servant.Foreign  ( src/Servant/Foreign.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Servant/Foreign.o )
+Installing library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/servant-foreign-0.10.1-FOxXkJSTmp91NRaTee6w6g
+Registering library for servant-foreign-0.10.1..

@@ -1,0 +1,2357 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-09 01:34:36.459337 UTC
+
+interface main:Main 8022
+  interface hash: 8db81e7ee6d5e5e5f4e6c8c54dc6294c
+  ABI hash: 91d1b5df144f7785f17b5e00f4b59724
+  export-list hash: db33579d2ebab03c4763e35a5435490c
+  orphan hash: ab505caf3c5ccef5fd56545a8738e1aa
+  flag hash: 4f3a83dbe32e889922f67c8db1edfc93
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.appl
+  Main.mAPI
+  Main.main
+  Main.server
+  Main.MangaAPI
+module dependencies: Api CustomData Handlers
+package dependencies: aeson-1.2.3.0 appar-0.1.4 array-0.5.2.0
+                      async-2.1.1.1 attoparsec-0.13.2.0 attoparsec-iso8601-1.0.0.0
+                      auto-update-0.1.4 base-4.10.1.0 base-compat-0.9.3
+                      base16-bytestring-0.1.1.6 base64-bytestring-1.0.0.1 basement-0.0.4
+                      binary-0.8.5.1 blaze-builder-0.4.0.2 blaze-html-0.9.0.1
+                      blaze-markup-0.8.0.0 byteorder-1.0.4 bytestring-0.10.8.2
+                      case-insensitive-1.2.0.10 containers-0.5.10.2 cryptonite-0.24
+                      curl-1.3.8 data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.3.0
+                      directory-1.3.0.2 dlist-0.8.0.3 errors-2.2.2 exceptions-0.8.3
+                      file-embed-0.0.10.1 filepath-1.4.1.2 foundation-0.0.17
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 hashable-1.2.6.1
+                      http-api-data-0.3.7.1 http-date-0.0.6.1 http-media-0.7.1.1
+                      http-types-0.9.1 http2-1.6.3 integer-gmp-1.0.1.0
+                      integer-logarithms-1.0.2 iproute-1.7.1 lifted-base-0.2.3.11
+                      lucid-2.9.9 memory-0.14.10 mime-types-0.1.0.7 mmorph-1.1.0
+                      monad-control-1.0.2.2 mtl-2.2.1 natural-transformation-0.4
+                      network-2.6.3.2 network-uri-2.6.1.0 old-locale-1.0.0.7
+                      parsec-3.1.11 pretty-1.1.3.3 primitive-0.6.2.0 psqueues-0.2.4.0
+                      random-1.1 regex-base-0.93.2 resourcet-1.1.10 scalpel-0.5.1
+                      scalpel-core-0.5.1 scientific-0.3.5.2 servant-0.11
+                      servant-lucid-0.7.1 servant-server-0.11.0.1 simple-sendfile-0.2.26
+                      stm-2.4.4.1 streaming-commons-0.1.18 string-conversions-0.4.0.1
+                      tagged-0.8.5 tagsoup-0.14.2 template-haskell-2.12.0.0 text-1.2.2.2
+                      text-conversions-0.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      time-1.8.0.2 time-locale-compat-0.1.1.3 transformers-0.5.2.0
+                      transformers-base-0.4.4 unexceptionalio-0.3.0 unix-2.7.2.2
+                      unix-compat-0.5.0.1 unliftio-core-0.1.0.0
+                      unordered-containers-0.2.8.0 uri-bytestring-0.3.0.1
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vault-0.3.0.7 vector-0.12.0.1
+                      wai-3.2.1.1 wai-app-static-3.1.6.1 warp-3.2.13 word8-0.1.3
+                      zlib-0.6.1.2
+orphans: basement-0.0.4:Basement.UArray.Base
+         basement-0.0.4:Basement.Block network-2.6.3.2:Network.Socket
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         attoparsec-0.13.2.0:Data.Attoparsec.ByteString.Char8
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         attoparsec-0.13.2.0:Data.Attoparsec.Text.Internal
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         stm-2.4.4.1:Control.Monad.STM
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         hashable-1.2.6.1:Data.Hashable.Generic text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.2.2:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: aeson-1.2.3.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.0:Data.Attoparsec.Internal.Types
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats basement-0.0.4:Basement.Block.Base
+                         basement-0.0.4:Basement.BoxedArray basement-0.0.4:Basement.Monad
+                         basement-0.0.4:Basement.MutableBuilder basement-0.0.4:Basement.Nat
+                         basement-0.0.4:Basement.NonEmpty
+                         basement-0.0.4:Basement.Numerical.Subtractive
+                         basement-0.0.4:Basement.String
+                         basement-0.0.4:Basement.String.Encoding.ASCII7
+                         basement-0.0.4:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.4:Basement.String.Encoding.UTF16
+                         basement-0.0.4:Basement.String.Encoding.UTF32
+                         basement-0.0.4:Basement.Types.AsciiString
+                         basement-0.0.4:Basement.Types.OffsetSize
+                         basement-0.0.4:Basement.UArray.Base
+                         basement-0.0.4:Basement.UTF8.Base
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         cryptonite-0.24:Crypto.Hash.Blake2
+                         cryptonite-0.24:Crypto.Hash.Blake2b
+                         cryptonite-0.24:Crypto.Hash.Blake2bp
+                         cryptonite-0.24:Crypto.Hash.Blake2s
+                         cryptonite-0.24:Crypto.Hash.Blake2sp
+                         cryptonite-0.24:Crypto.Hash.Keccak cryptonite-0.24:Crypto.Hash.MD2
+                         cryptonite-0.24:Crypto.Hash.MD4 cryptonite-0.24:Crypto.Hash.MD5
+                         cryptonite-0.24:Crypto.Hash.RIPEMD160
+                         cryptonite-0.24:Crypto.Hash.SHA1 cryptonite-0.24:Crypto.Hash.SHA224
+                         cryptonite-0.24:Crypto.Hash.SHA256 cryptonite-0.24:Crypto.Hash.SHA3
+                         cryptonite-0.24:Crypto.Hash.SHA384
+                         cryptonite-0.24:Crypto.Hash.SHA512
+                         cryptonite-0.24:Crypto.Hash.SHA512t
+                         cryptonite-0.24:Crypto.Hash.SHAKE
+                         cryptonite-0.24:Crypto.Hash.Skein256
+                         cryptonite-0.24:Crypto.Hash.Skein512
+                         cryptonite-0.24:Crypto.Hash.Tiger
+                         cryptonite-0.24:Crypto.Hash.Whirlpool dlist-0.8.0.3:Data.DList
+                         foundation-0.0.17:Foundation.Array.Bitmap
+                         foundation-0.0.17:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.17:Foundation.Collection.Buildable
+                         foundation-0.0.17:Foundation.Collection.Element
+                         foundation-0.0.17:Foundation.Collection.Keyed
+                         foundation-0.0.17:Foundation.Collection.Mutable
+                         foundation-0.0.17:Foundation.Tuple
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.7.1:Web.Internal.FormUrlEncoded
+                         iproute-1.7.1:Data.IP.Addr iproute-1.7.1:Data.IP.Range
+                         main:CustomData monad-control-1.0.2.2:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         resourcet-1.1.10:Control.Monad.Trans.Resource.Internal
+                         servant-0.11:Servant.API.ContentTypes
+                         servant-0.11:Servant.API.IsSecure servant-0.11:Servant.API.Verbs
+                         servant-0.11:Servant.Utils.Links
+                         servant-server-0.11.0.1:Servant.Server.Internal
+                         servant-server-0.11.0.1:Servant.Server.Internal.BasicAuth
+                         servant-server-0.11.0.1:Servant.Server.Internal.Handler
+                         servant-server-0.11.0.1:Servant.Server.Internal.RoutingApplication
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         unordered-containers-0.2.8.0:Data.HashMap.Base
+                         unordered-containers-0.2.8.0:Data.HashSet
+                         uri-bytestring-0.3.0.1:URI.ByteString.Types
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2:Codec.Compression.Zlib.Stream
+import  -/  base-4.10.1.0:Control.Monad.IO.Class 9d78cd0f73a837f3c00753bd212b9f2c
+import  -/  base-4.10.1.0:Data.Maybe 07738c5485acb328136bb15596f8b845
+import  -/  base-4.10.1.0:Data.Proxy da449059b879cc23dde5f0d9cfa646e9
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  lucid-2.9.9:Lucid.Base c76bc22547808ed6245e5653874108fe
+import  -/  lucid-2.9.9:Lucid.Html5 2a818ab1959feca6f116f9997a86f124
+import  -/  Api 91cc8628d9336d8ab0c353f27b6d1957
+  exports: b38a67fea32db10a589fc777f14db154
+import  -/  CustomData 38f0bd6f3d2c462d07d1369c8ca7c65e
+  exports: ee9b8754e4e2243bca463c8d5cb7256a
+  MangaChapter 7b216473ebbafcfc5cf879f5b7cee452
+  MangaInfo 58540e6d7af1ea659c13eea80b143eab
+  PageUrl 0e5b94a6d34f31e2eff4249dd112b3a8
+import  -/  Handlers fa4b7198c4801e0e6e6bf2a657fff0f5
+  exports: 76dfc913564ee5bff0747eddd030db02
+  chapters c6d7d29116916f9fa914260f38052413
+  pages e48b6f7ce8334997eda7df1037224ddd
+  titles e26994fd1bb4d6b5fefca640aa256bdb
+import  -/  servant-0.11:Servant.API 7461b83ee1c7845389b2479815c01e7d
+import  -/  servant-0.11:Servant.API.Alternative d1798042fa5d8a7020b7f3705b4978be
+import  -/  servant-0.11:Servant.API.Capture 66dd840e690def84ee6c004ae80aaee5
+import  -/  servant-0.11:Servant.API.Sub d940aec9e822fe17abd0bcb699955fd8
+import  -/  servant-0.11:Servant.API.Verbs 45c672ff76bfde00ff39132f40967597
+import  -/  servant-lucid-0.7.1:Servant.HTML.Lucid 62e80f947509e9956d7c8ffea3e2cbe9
+import  -/  servant-server-0.11.0.1:Servant 0e3fecd900ea68cb253af5379702bf65
+import  -/  servant-server-0.11.0.1:Servant.Server 5429a0b52ad570c53d8afcfd1e842f2c
+import  -/  servant-server-0.11.0.1:Servant.Server.Internal dafcc161c58a3ed9298e43c90128e52b
+import  -/  text-conversions-0.3.0:Data.Text.Conversions e9e91238becd91f5aa85c9c56f722c0b
+import  -/  wai-3.2.1.1:Network.Wai 8bb58138416d5075549443f0a983bf55
+import  -/  warp-3.2.13:Network.Wai.Handler.Warp 625f1aa459431491d5d108d2c1653b51
+import  -/  warp-3.2.13:Network.Wai.Handler.Warp.Run 285d7015e6b9527941e3ccee22560674
+fe4992be6ce64bdf3ddded1b08dce59b
+  $s$fAllCTRender:a ::
+    Servant.API.ContentTypes.AllCTRender
+      '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.HTML.Lucid.HTML]
+                  @ [CustomData.MangaInfo]
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$callMime
+                     @ Servant.HTML.Lucid.HTML
+                     @ '[]
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N)))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.HTML.Lucid.HTML]>_N))
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$chandleAcceptH
+                     @ Servant.HTML.Lucid.HTML
+                     @ '[]
+                     @ [CustomData.MangaInfo]
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     Main.$s$fAllCTRender:a_$s$fAllMimeRender:a0) -}
+694d94c896d4a77227ffce765f12671a
+  $s$fAllCTRender:a1 ::
+    Servant.API.ContentTypes.AllCTRender
+      '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.HTML.Lucid.HTML]
+                  @ [CustomData.MangaChapter]
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$callMime
+                     @ Servant.HTML.Lucid.HTML
+                     @ '[]
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N)))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.HTML.Lucid.HTML]>_N))
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$chandleAcceptH
+                     @ Servant.HTML.Lucid.HTML
+                     @ '[]
+                     @ [CustomData.MangaChapter]
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     Main.$s$fAllCTRender:a_$s$fAllMimeRender:a1) -}
+6a36d682cff821760f2d27a608afafd6
+  $s$fAllCTRender:a2 ::
+    Servant.API.ContentTypes.AllCTRender
+      '[Servant.HTML.Lucid.HTML] CustomData.PageUrl
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.HTML.Lucid.HTML]
+                  @ CustomData.PageUrl
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$callMime
+                     @ Servant.HTML.Lucid.HTML
+                     @ '[]
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N)))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.HTML.Lucid.HTML]>_N))
+                  (Servant.API.ContentTypes.$fAllCTRender:a_$chandleAcceptH
+                     @ Servant.HTML.Lucid.HTML
+                     @ '[]
+                     @ CustomData.PageUrl
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML
+                     Servant.API.ContentTypes.$fAllCTRender[]()_$callMime
+                       `cast`
+                     (Sym (Servant.API.ContentTypes.N:AllMime[0] <'[]>_N))
+                     Main.$s$fAllCTRender:a_$s$fAllMimeRender:a2) -}
+8081b7a29fc8d43ba260c214b05cf464
+  $s$fAllCTRender:a_$s$fAllMimeRender:a0 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.HTML.Lucid.HTML]
+                  @ [CustomData.MangaInfo]
+                  (\ (eta :: Data.Proxy.Proxy '[Servant.HTML.Lucid.HTML]) ->
+                   GHC.Types.:
+                     @ Network.HTTP.Media.MediaType.Internal.MediaType
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML1
+                     (GHC.Types.[] @ Network.HTTP.Media.MediaType.Internal.MediaType))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.HTML.Lucid.HTML]>_N))
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender
+                     @ Servant.HTML.Lucid.HTML
+                     @ [CustomData.MangaInfo]
+                     Main.$s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa) -}
+ef09d570733899f3b43cd95c360e5faa
+  $s$fAllCTRender:a_$s$fAllMimeRender:a1 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.HTML.Lucid.HTML]
+                  @ [CustomData.MangaChapter]
+                  (\ (eta :: Data.Proxy.Proxy '[Servant.HTML.Lucid.HTML]) ->
+                   GHC.Types.:
+                     @ Network.HTTP.Media.MediaType.Internal.MediaType
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML1
+                     (GHC.Types.[] @ Network.HTTP.Media.MediaType.Internal.MediaType))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.HTML.Lucid.HTML]>_N))
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender
+                     @ Servant.HTML.Lucid.HTML
+                     @ [CustomData.MangaChapter]
+                     Main.$s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa1) -}
+0990972c5a0b9fbef488fb9e08dcb9f7
+  $s$fAllCTRender:a_$s$fAllMimeRender:a2 ::
+    Servant.API.ContentTypes.AllMimeRender
+      '[Servant.HTML.Lucid.HTML] CustomData.PageUrl
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ '[Servant.HTML.Lucid.HTML]
+                  @ CustomData.PageUrl
+                  (\ (eta :: Data.Proxy.Proxy '[Servant.HTML.Lucid.HTML]) ->
+                   GHC.Types.:
+                     @ Network.HTTP.Media.MediaType.Internal.MediaType
+                     Servant.HTML.Lucid.$fAcceptTYPEHTML1
+                     (GHC.Types.[] @ Network.HTTP.Media.MediaType.Internal.MediaType))
+                    `cast`
+                  (Sym (Servant.API.ContentTypes.N:AllMime[0]
+                            <'[Servant.HTML.Lucid.HTML]>_N))
+                  (Servant.API.ContentTypes.$fAllMimeRender:a0_$callMimeRender
+                     @ Servant.HTML.Lucid.HTML
+                     @ CustomData.PageUrl
+                     Main.$s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa2) -}
+2bfe197ea300bc3ca7518659eb6fec62
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.HTML.Lucid.HTML [CustomData.MangaInfo]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.HTML.Lucid.HTML
+                  @ [CustomData.MangaInfo]
+                  Servant.HTML.Lucid.$fAcceptTYPEHTML
+                  (Servant.HTML.Lucid.$fMimeRenderTYPEHTMLa_$cmimeRender
+                     @ [CustomData.MangaInfo]
+                     CustomData.$fToHtml[]) -}
+71e0e91949185aebe58a601ac65f867e
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa1 ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.HTML.Lucid.HTML [CustomData.MangaChapter]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.HTML.Lucid.HTML
+                  @ [CustomData.MangaChapter]
+                  Servant.HTML.Lucid.$fAcceptTYPEHTML
+                  (Servant.HTML.Lucid.$fMimeRenderTYPEHTMLa_$cmimeRender
+                     @ [CustomData.MangaChapter]
+                     CustomData.$fToHtml[]0) -}
+dd5c0ce2f791c62e75d9d8b8b337a03a
+  $s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa2 ::
+    Servant.API.ContentTypes.MimeRender
+      Servant.HTML.Lucid.HTML CustomData.PageUrl
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.HTML.Lucid.HTML
+                  @ CustomData.PageUrl
+                  Servant.HTML.Lucid.$fAcceptTYPEHTML
+                  (Servant.HTML.Lucid.$fMimeRenderTYPEHTMLa_$cmimeRender
+                     @ CustomData.PageUrl
+                     CustomData.$fToHtmlPageUrl) -}
+b4d20c4a3d86fa8381fb3372c95fd238
+  $s$fHasServerTYPE:<|>context_$croute1 :: GHC.Natural.Natural
+  {- Unfolding: (case Main.$s$fHasServerTYPE:<|>context_$croute2 of wild {
+                   GHC.Integer.Type.S# i#
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# i# 0#) of wild1 {
+                        GHC.Types.False -> GHC.Natural.underflowError @ GHC.Natural.Natural
+                        GHC.Types.True -> GHC.Natural.NatS# (GHC.Prim.int2Word# i#) }
+                   GHC.Integer.Type.Jp# dt
+                   -> case GHC.Prim.uncheckedIShiftRL#
+                             (GHC.Prim.sizeofByteArray# dt)
+                             3# of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.sizeofByteArray# dt of wild2 {
+                             DEFAULT -> GHC.Natural.NatJ# dt
+                             0# -> GHC.Natural.underflowError @ GHC.Natural.Natural }
+                        1#
+                        -> case GHC.Prim.indexWordArray# dt 0# of wild2 { DEFAULT ->
+                           GHC.Natural.NatS# wild2 } }
+                   GHC.Integer.Type.Jn# ipv
+                   -> GHC.Natural.underflowError @ GHC.Natural.Natural }) -}
+fe7a3d8e552f7ed9f4e31801c5c34182
+  $s$fHasServerTYPE:<|>context_$croute2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (200) -}
+fc100e287012778e313109e466e3bad0
+  $s$fHasServerTYPE:<|>context_$croute4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("all"#) -}
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+e81f7b3ce7775d387cbc2a3cc2428e85
+  type MangaAPI =
+    ("all"
+     Servant.API.Sub.:> Servant.API.Verbs.Get
+                          '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo])
+    Servant.API.Alternative.:<|> ((Servant.API.Capture.Capture
+                                     "manga" GHC.Base.String
+                                   Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                        '[Servant.HTML.Lucid.HTML]
+                                                        [CustomData.MangaChapter])
+                                  Servant.API.Alternative.:<|> (Servant.API.Capture.Capture
+                                                                  "manga" GHC.Base.String
+                                                                Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                      "ch"
+                                                                                      GHC.Types.Int
+                                                                                    Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                                          "pg"
+                                                                                                          GHC.Types.Int
+                                                                                                        Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                                             '[Servant.HTML.Lucid.HTML]
+                                                                                                                             CustomData.PageUrl))))
+f1d85e8cf29be2f5b5ba6ebc4cbf83db
+  appl :: Network.Wai.Application
+  {- Arity: 2,
+     Unfolding: (Servant.Server.Internal.RoutingApplication.toApplication
+                   Main.appl1) -}
+d250101539bc8f5aad423b6788cd262a
+  appl1 ::
+    Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Arity: 2,
+     Unfolding: (Servant.Server.Internal.Router.runRouterEnv
+                   @ ()
+                   Main.appl2
+                   GHC.Tuple.()) -}
+bb9d850c2cfbbef8c8c6cc2022fba938
+  appl10 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text, (Data.Text.Internal.Text, ()))
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Capture.Capture "pg" GHC.Types.Int
+          Servant.API.Sub.:> Servant.API.Verbs.Get
+                               '[Servant.HTML.Lucid.HTML] CustomData.PageUrl)
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.addCapture
+                   @ (Data.Text.Internal.Text, ())
+                   @ GHC.Types.Int
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                              '[Servant.HTML.Lucid.HTML] CustomData.PageUrl)
+                        Servant.Server.Internal.Handler.Handler)
+                   @ Data.Text.Internal.Text
+                   Main.appl11
+                     `cast`
+                   (Servant.Server.Internal.RoutingApplication.Delayed
+                      <(Data.Text.Internal.Text, ())>_R
+                      (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                <*>_N
+                                <"ch">_N
+                                <GHC.Types.Int>_N
+                                <Servant.API.Capture.Capture "pg" GHC.Types.Int
+                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                      '[Servant.HTML.Lucid.HTML]
+                                                      CustomData.PageUrl>_N
+                                <Servant.Server.Internal.Handler.Handler>_N)))_R
+                   Main.appl9) -}
+42de90a978ddcb19b40c3f3b556337d4
+  appl11 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text, ())
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Capture.Capture "ch" GHC.Types.Int
+          Servant.API.Sub.:> (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                              Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                   '[Servant.HTML.Lucid.HTML] CustomData.PageUrl))
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.addCapture
+                   @ ()
+                   @ [GHC.Types.Char]
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Capture.Capture "ch" GHC.Types.Int
+                         Servant.API.Sub.:> (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                                             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                  '[Servant.HTML.Lucid.HTML]
+                                                                  CustomData.PageUrl))
+                        Servant.Server.Internal.Handler.Handler)
+                   @ Data.Text.Internal.Text
+                   Main.appl13
+                     `cast`
+                   (Servant.Server.Internal.RoutingApplication.Delayed
+                      <()>_R
+                      (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                <*>_N
+                                <"manga">_N
+                                <[GHC.Types.Char]>_N
+                                <Servant.API.Capture.Capture "ch" GHC.Types.Int
+                                 Servant.API.Sub.:> (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                          '[Servant.HTML.Lucid.HTML]
+                                                                          CustomData.PageUrl)>_N
+                                <Servant.Server.Internal.Handler.Handler>_N)))_R
+                   Main.appl12) -}
+833b916ecc725d183f45ae4c852531f0
+  appl12 ::
+    Data.Text.Internal.Text
+    -> Servant.Server.Internal.RoutingApplication.DelayedIO
+         [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(U,U,U)>,
+     Unfolding: (\ (txt :: Data.Text.Internal.Text) ->
+                 case Web.Internal.HttpApiData.$w$cparseUrlPiece3
+                        txt of ww { Unit# ww1 ->
+                 (Servant.Server.Internal.RoutingApplication.$fApplicativeDelayedIO4
+                    @ [GHC.Types.Char]
+                    ww1)
+                   `cast`
+                 (Nth:3
+                      (Trans
+                           (<[GHC.Types.Char]>_R
+                            ->_R Trans
+                                     (<Network.Wai.Internal.Request>_R
+                                      ->_R Trans
+                                               (<GHC.IORef.IORef
+                                                   Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                                ->_R Trans
+                                                         (Sym (GHC.Types.N:IO[0]
+                                                                   <Servant.Server.Internal.RoutingApplication.RouteResult
+                                                                      [GHC.Types.Char]>_R))
+                                                         (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <[GHC.Types.Char]>_N)))
+                                               (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                         <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                            GHC.Types.IO>_R
+                                                         <[GHC.Types.Char]>_N)))
+                                     (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                               <*>_N
+                                               <Network.Wai.Internal.Request>_R
+                                               <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                  (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                     GHC.Types.IO)>_R
+                                               <[GHC.Types.Char]>_N)))
+                           (<[GHC.Types.Char]>_R
+                            ->_R Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <[GHC.Types.Char]>_N))) }) -}
+dcf46733949fa223889fb91e51e0b263
+  appl13 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      ()
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Capture.Capture "manga" GHC.Base.String
+          Servant.API.Sub.:> (Servant.API.Capture.Capture "ch" GHC.Types.Int
+                              Servant.API.Sub.:> (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                       '[Servant.HTML.Lucid.HTML]
+                                                                       CustomData.PageUrl)))
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.Delayed
+                   @ ()
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Capture.Capture "manga" GHC.Base.String
+                         Servant.API.Sub.:> (Servant.API.Capture.Capture "ch" GHC.Types.Int
+                                             Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                   "pg" GHC.Types.Int
+                                                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                      '[Servant.HTML.Lucid.HTML]
+                                                                                      CustomData.PageUrl)))
+                        Servant.Server.Internal.Handler.Handler)
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   (Servant.Server.Internal.RoutingApplication.emptyDelayed5 @ ())
+                     `cast`
+                   (Trans
+                        (<()>_R
+                         ->_R <Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (<()>_R
+                         ->_R Trans
+                                  (<Network.Wai.Internal.Request>_R
+                                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                 <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                    GHC.Types.IO>_R
+                                                 <()>_N))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Network.Wai.Internal.Request>_R
+                                                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                       GHC.Types.IO)>_R
+                                                 <()>_N))
+                                       (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed1
+                     `cast`
+                   (Trans
+                        (<()>_R
+                         ->_R <Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (<()>_R
+                         ->_R Trans
+                                  (<Network.Wai.Internal.Request>_R
+                                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                 <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                    GHC.Types.IO>_R
+                                                 <()>_N))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Network.Wai.Internal.Request>_R
+                                                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                       GHC.Types.IO)>_R
+                                                 <()>_N))
+                                       (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Main.appl14) -}
+545c5cf90fe5944a47f56fde2c16aebe
+  appl14 ::
+    ()
+    -> ()
+    -> ()
+    -> ()
+    -> ()
+    -> Network.Wai.Internal.Request
+    -> Servant.Server.Internal.RoutingApplication.RouteResult
+         (Servant.Server.Internal.ServerT
+            (Servant.API.Capture.Capture "manga" GHC.Base.String
+             Servant.API.Sub.:> (Servant.API.Capture.Capture "ch" GHC.Types.Int
+                                 Servant.API.Sub.:> (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                          '[Servant.HTML.Lucid.HTML]
+                                                                          CustomData.PageUrl)))
+            Servant.Server.Internal.Handler.Handler)
+  {- Arity: 6, Strictness: <L,A><L,A><L,A><L,A><L,A><L,A>m3,
+     Unfolding: (\ (c :: ())
+                   (p :: ())
+                   (h :: ())
+                   (a1 :: ())
+                   (b1 :: ())
+                   (req :: Network.Wai.Internal.Request) ->
+                 Main.appl15) -}
+422ed12c925266af0f011fd2fab51bcf
+  appl15 ::
+    Servant.Server.Internal.RoutingApplication.RouteResult
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Capture.Capture "manga" GHC.Base.String
+          Servant.API.Sub.:> (Servant.API.Capture.Capture "ch" GHC.Types.Int
+                              Servant.API.Sub.:> (Servant.API.Capture.Capture "pg" GHC.Types.Int
+                                                  Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                       '[Servant.HTML.Lucid.HTML]
+                                                                       CustomData.PageUrl)))
+         Servant.Server.Internal.Handler.Handler)
+  {- Strictness: m3,
+     Unfolding: (Servant.Server.Internal.RoutingApplication.Route
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Capture.Capture "manga" GHC.Base.String
+                         Servant.API.Sub.:> (Servant.API.Capture.Capture "ch" GHC.Types.Int
+                                             Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                   "pg" GHC.Types.Int
+                                                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                      '[Servant.HTML.Lucid.HTML]
+                                                                                      CustomData.PageUrl)))
+                        Servant.Server.Internal.Handler.Handler)
+                   Handlers.pages1
+                     `cast`
+                   (Trans
+                        (<GHC.Base.String>_R
+                         ->_R <GHC.Types.Int>_R
+                         ->_R <GHC.Types.Int>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Data.Either.Either
+                                               Servant.Server.Internal.ServantErr.ServantErr
+                                               CustomData.PageUrl>_R))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                 <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                 <GHC.Types.IO>_R
+                                                 <CustomData.PageUrl>_N))
+                                       (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <CustomData.PageUrl>_N)))
+                        (Trans
+                             (<[GHC.Types.Char]>_R
+                              ->_R Trans
+                                       (<GHC.Types.Int>_R
+                                        ->_R Trans
+                                                 (<GHC.Types.Int>_R
+                                                  ->_R Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                                     <Network.HTTP.Types.Method.StdMethod>_N
+                                                                     <'Network.HTTP.Types.Method.GET>_N
+                                                                     <200>_N
+                                                                     <'[Servant.HTML.Lucid.HTML]>_N
+                                                                     <CustomData.PageUrl>_N
+                                                                     <Servant.Server.Internal.Handler.Handler>_N)))
+                                                 (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                <*>_N
+                                                                <"pg">_N
+                                                                <GHC.Types.Int>_N
+                                                                <Servant.API.Verbs.Verb
+                                                                   'Network.HTTP.Types.Method.GET
+                                                                   200
+                                                                   '[Servant.HTML.Lucid.HTML]
+                                                                   CustomData.PageUrl>_N
+                                                                <Servant.Server.Internal.Handler.Handler>_N))))
+                                       (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                      <*>_N
+                                                      <"ch">_N
+                                                      <GHC.Types.Int>_N
+                                                      <Servant.API.Capture.Capture
+                                                         "pg" GHC.Types.Int
+                                                       Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                            '[Servant.HTML.Lucid.HTML]
+                                                                            CustomData.PageUrl>_N
+                                                      <Servant.Server.Internal.Handler.Handler>_N))))
+                             (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                            <*>_N
+                                            <"manga">_N
+                                            <[GHC.Types.Char]>_N
+                                            <Servant.API.Capture.Capture "ch" GHC.Types.Int
+                                             Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                   "pg" GHC.Types.Int
+                                                                 Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                      '[Servant.HTML.Lucid.HTML]
+                                                                                      CustomData.PageUrl)>_N
+                                            <Servant.Server.Internal.Handler.Handler>_N)))))) -}
+27e90295f88812c246c1efc5f2f041b1
+  appl16 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text,
+       (Data.Text.Internal.Text, (Data.Text.Internal.Text, ())))
+      (Servant.Server.Internal.Server
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.HTML.Lucid.HTML]
+            CustomData.PageUrl))
+    -> Servant.Server.Internal.Router.Router
+         (Data.Text.Internal.Text,
+          (Data.Text.Internal.Text, (Data.Text.Internal.Text, ())))
+  {- Unfolding: (Servant.Server.Internal.$w$croute9
+                   @ Network.HTTP.Types.Method.StdMethod
+                   @ '[Servant.HTML.Lucid.HTML]
+                   @ CustomData.PageUrl
+                   @ 'Network.HTTP.Types.Method.GET
+                   @ 200
+                   @ '[]
+                   Main.$s$fAllCTRender:a2
+                   Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                     `cast`
+                   (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                             <Network.HTTP.Types.Method.StdMethod>_N
+                             <'Network.HTTP.Types.Method.GET>_N))
+                   Main.$s$fHasServerTYPE:<|>context_$croute1
+                     `cast`
+                   (Trans
+                        (Sym (GHC.TypeNats.N:SNat[0] <200>_P))
+                        (Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N))
+                   @ (Data.Text.Internal.Text,
+                      (Data.Text.Internal.Text, (Data.Text.Internal.Text, ())))
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.HTML.Lucid.HTML]
+                           CustomData.PageUrl))) -}
+d67482d4297be01a12e907a25413202a
+  appl17 ::
+    Servant.Server.Internal.Router.Router'
+      () Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Strictness: m2,
+     Unfolding: (Servant.Server.Internal.Router.CaptureRouter
+                   @ ()
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl18) -}
+9f6b833615cd95dc066396387dfaa909
+  appl18 ::
+    Servant.Server.Internal.Router.Router (Data.Text.Internal.Text, ())
+  {- Unfolding: (Main.appl23 Main.appl19) -}
+7b173ace20ddd0d431b39dfc2a4d075e
+  appl19 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text, ())
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.HTML.Lucid.HTML]
+            [CustomData.MangaChapter])
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.addCapture
+                   @ ()
+                   @ [GHC.Types.Char]
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.HTML.Lucid.HTML]
+                           [CustomData.MangaChapter])
+                        Servant.Server.Internal.Handler.Handler)
+                   @ Data.Text.Internal.Text
+                   Main.appl20
+                     `cast`
+                   (Servant.Server.Internal.RoutingApplication.Delayed
+                      <()>_R
+                      (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                <*>_N
+                                <"manga">_N
+                                <[GHC.Types.Char]>_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.GET
+                                   200
+                                   '[Servant.HTML.Lucid.HTML]
+                                   [CustomData.MangaChapter]>_N
+                                <Servant.Server.Internal.Handler.Handler>_N)))_R
+                   Main.appl12) -}
+9c55dd48aa19b7e8a6e576db80b0a75c
+  appl2 :: Servant.Server.Internal.Router.Router ()
+  {- Unfolding: (Servant.Server.Internal.Router.choice
+                   @ ()
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl24
+                   Main.appl3) -}
+df71afd7d03e0272d6c73e9e82aa597f
+  appl20 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      ()
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Capture.Capture "manga" GHC.Base.String
+          Servant.API.Sub.:> Servant.API.Verbs.Get
+                               '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter])
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.Delayed
+                   @ ()
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Capture.Capture "manga" GHC.Base.String
+                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                              '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter])
+                        Servant.Server.Internal.Handler.Handler)
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   (Servant.Server.Internal.RoutingApplication.emptyDelayed5 @ ())
+                     `cast`
+                   (Trans
+                        (<()>_R
+                         ->_R <Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (<()>_R
+                         ->_R Trans
+                                  (<Network.Wai.Internal.Request>_R
+                                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                 <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                    GHC.Types.IO>_R
+                                                 <()>_N))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Network.Wai.Internal.Request>_R
+                                                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                       GHC.Types.IO)>_R
+                                                 <()>_N))
+                                       (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed1
+                     `cast`
+                   (Trans
+                        (<()>_R
+                         ->_R <Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (<()>_R
+                         ->_R Trans
+                                  (<Network.Wai.Internal.Request>_R
+                                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                 <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                    GHC.Types.IO>_R
+                                                 <()>_N))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Network.Wai.Internal.Request>_R
+                                                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                       GHC.Types.IO)>_R
+                                                 <()>_N))
+                                       (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Main.appl21) -}
+771eb7c74c8d0edadf06c05974238fb3
+  appl21 ::
+    ()
+    -> ()
+    -> ()
+    -> ()
+    -> ()
+    -> Network.Wai.Internal.Request
+    -> Servant.Server.Internal.RoutingApplication.RouteResult
+         (Servant.Server.Internal.ServerT
+            (Servant.API.Capture.Capture "manga" GHC.Base.String
+             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                  '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter])
+            Servant.Server.Internal.Handler.Handler)
+  {- Arity: 6, Strictness: <L,A><L,A><L,A><L,A><L,A><L,A>m3,
+     Unfolding: (\ (c :: ())
+                   (p :: ())
+                   (h :: ())
+                   (a1 :: ())
+                   (b1 :: ())
+                   (req :: Network.Wai.Internal.Request) ->
+                 Main.appl22) -}
+b608ed32c209a23095bab0b46da4e4d5
+  appl22 ::
+    Servant.Server.Internal.RoutingApplication.RouteResult
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Capture.Capture "manga" GHC.Base.String
+          Servant.API.Sub.:> Servant.API.Verbs.Get
+                               '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter])
+         Servant.Server.Internal.Handler.Handler)
+  {- Strictness: m3,
+     Unfolding: (Servant.Server.Internal.RoutingApplication.Route
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Capture.Capture "manga" GHC.Base.String
+                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                              '[Servant.HTML.Lucid.HTML] [CustomData.MangaChapter])
+                        Servant.Server.Internal.Handler.Handler)
+                   Handlers.chapters1
+                     `cast`
+                   (Trans
+                        (<GHC.Base.String>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Data.Either.Either
+                                               Servant.Server.Internal.ServantErr.ServantErr
+                                               [CustomData.MangaChapter]>_R))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                 <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                 <GHC.Types.IO>_R
+                                                 <[CustomData.MangaChapter]>_N))
+                                       (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[CustomData.MangaChapter]>_N)))
+                        (Trans
+                             (<[GHC.Types.Char]>_R
+                              ->_R Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                 <Network.HTTP.Types.Method.StdMethod>_N
+                                                 <'Network.HTTP.Types.Method.GET>_N
+                                                 <200>_N
+                                                 <'[Servant.HTML.Lucid.HTML]>_N
+                                                 <[CustomData.MangaChapter]>_N
+                                                 <Servant.Server.Internal.Handler.Handler>_N)))
+                             (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                            <*>_N
+                                            <"manga">_N
+                                            <[GHC.Types.Char]>_N
+                                            <Servant.API.Verbs.Verb
+                                               'Network.HTTP.Types.Method.GET
+                                               200
+                                               '[Servant.HTML.Lucid.HTML]
+                                               [CustomData.MangaChapter]>_N
+                                            <Servant.Server.Internal.Handler.Handler>_N)))))) -}
+04903c9dc8c8d077d6f65e636a2aea9f
+  appl23 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text, ())
+      (Servant.Server.Internal.Server
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.HTML.Lucid.HTML]
+            [CustomData.MangaChapter]))
+    -> Servant.Server.Internal.Router.Router
+         (Data.Text.Internal.Text, ())
+  {- Unfolding: (Servant.Server.Internal.$w$croute9
+                   @ Network.HTTP.Types.Method.StdMethod
+                   @ '[Servant.HTML.Lucid.HTML]
+                   @ [CustomData.MangaChapter]
+                   @ 'Network.HTTP.Types.Method.GET
+                   @ 200
+                   @ '[]
+                   Main.$s$fAllCTRender:a1
+                   Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                     `cast`
+                   (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                             <Network.HTTP.Types.Method.StdMethod>_N
+                             <'Network.HTTP.Types.Method.GET>_N))
+                   Main.$s$fHasServerTYPE:<|>context_$croute1
+                     `cast`
+                   (Trans
+                        (Sym (GHC.TypeNats.N:SNat[0] <200>_P))
+                        (Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N))
+                   @ (Data.Text.Internal.Text, ())
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.HTML.Lucid.HTML]
+                           [CustomData.MangaChapter]))) -}
+02e921819a859fa5120297a3bec1e725
+  appl24 ::
+    Servant.Server.Internal.Router.Router'
+      () Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Strictness: m1,
+     Unfolding: (Servant.Server.Internal.Router.StaticRouter
+                   @ ()
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl25
+                   (GHC.Types.[]
+                      @ (()
+                         -> Servant.Server.Internal.RoutingApplication.RoutingApplication))) -}
+8b887ae568a45942af6bc9127dc00f3c
+  appl25 ::
+    Data.Map.Internal.Map
+      Data.Text.Internal.Text
+      (Servant.Server.Internal.Router.Router'
+         () Servant.Server.Internal.RoutingApplication.RoutingApplication)
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        Main.appl30 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 Data.Map.Internal.Bin
+                   @ Data.Text.Internal.Text
+                   @ (Servant.Server.Internal.Router.Router'
+                        () Servant.Server.Internal.RoutingApplication.RoutingApplication)
+                   1#
+                   dt
+                   Main.appl26
+                   (Data.Map.Internal.Tip
+                      @ Data.Text.Internal.Text
+                      @ (Servant.Server.Internal.Router.Router'
+                           () Servant.Server.Internal.RoutingApplication.RoutingApplication))
+                   (Data.Map.Internal.Tip
+                      @ Data.Text.Internal.Text
+                      @ (Servant.Server.Internal.Router.Router'
+                           ()
+                           Servant.Server.Internal.RoutingApplication.RoutingApplication)) } }) -}
+71d3e149597bd21236b9a0b27760a1b1
+  appl26 :: Servant.Server.Internal.Router.Router ()
+  {- Unfolding: (Main.appl29
+                   Main.appl27
+                     `cast`
+                   (Servant.Server.Internal.RoutingApplication.Delayed
+                      <()>_R
+                      (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                <*>_N
+                                <"all">_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.GET
+                                   200
+                                   '[Servant.HTML.Lucid.HTML]
+                                   [CustomData.MangaInfo]>_N
+                                <Servant.Server.Internal.Handler.Handler>_N)))_R) -}
+aff8cb9062a879503bd130e709331f9a
+  appl27 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      ()
+      (Servant.Server.Internal.ServerT
+         ("all"
+          Servant.API.Sub.:> Servant.API.Verbs.Get
+                               '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo])
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.Delayed
+                   @ ()
+                   @ (Servant.Server.Internal.ServerT
+                        ("all"
+                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                              '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo])
+                        Servant.Server.Internal.Handler.Handler)
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   @ ()
+                   (Servant.Server.Internal.RoutingApplication.emptyDelayed5 @ ())
+                     `cast`
+                   (Trans
+                        (<()>_R
+                         ->_R <Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (<()>_R
+                         ->_R Trans
+                                  (<Network.Wai.Internal.Request>_R
+                                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                 <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                    GHC.Types.IO>_R
+                                                 <()>_N))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Network.Wai.Internal.Request>_R
+                                                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                       GHC.Types.IO)>_R
+                                                 <()>_N))
+                                       (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed3
+                     `cast`
+                   (Trans
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (Trans
+                             (<Network.Wai.Internal.Request>_R
+                              ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                               GHC.Types.IO>_R
+                                            <()>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Network.Wai.Internal.Request>_R
+                                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                                               (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO)>_R
+                                            <()>_N))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Servant.Server.Internal.RoutingApplication.emptyDelayed1
+                     `cast`
+                   (Trans
+                        (<()>_R
+                         ->_R <Network.Wai.Internal.Request>_R
+                         ->_R <GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Trans
+                                  (Sym (GHC.Types.N:IO[0]
+                                            <Servant.Server.Internal.RoutingApplication.RouteResult
+                                               ()>_R))
+                                  (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                            <GHC.Types.IO>_R <()>_N)))
+                        (<()>_R
+                         ->_R Trans
+                                  (<Network.Wai.Internal.Request>_R
+                                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                 <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                    GHC.Types.IO>_R
+                                                 <()>_N))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Network.Wai.Internal.Request>_R
+                                                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                       GHC.Types.IO)>_R
+                                                 <()>_N))
+                                       (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <()>_N))))
+                   Main.appl28) -}
+45ef60758bbdc65f0b593f87d1437c19
+  appl28 ::
+    ()
+    -> ()
+    -> ()
+    -> ()
+    -> ()
+    -> Network.Wai.Internal.Request
+    -> Servant.Server.Internal.RoutingApplication.RouteResult
+         (Servant.Server.Internal.ServerT
+            ("all"
+             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                  '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo])
+            Servant.Server.Internal.Handler.Handler)
+  {- Arity: 6, Strictness: <L,A><L,A><L,A><L,A><L,A><L,A>m3,
+     Unfolding: (\ (c :: ())
+                   (p :: ())
+                   (h :: ())
+                   (a1 :: ())
+                   (b1 :: ())
+                   (req :: Network.Wai.Internal.Request) ->
+                 Servant.Server.Internal.RoutingApplication.Route
+                   @ (Servant.Server.Internal.ServerT
+                        ("all"
+                         Servant.API.Sub.:> Servant.API.Verbs.Get
+                                              '[Servant.HTML.Lucid.HTML] [CustomData.MangaInfo])
+                        Servant.Server.Internal.Handler.Handler)
+                   Handlers.titles1
+                     `cast`
+                   (Trans
+                        (Nth:3
+                             (Nth:3
+                                  (Trans
+                                       (<Control.Monad.Trans.Except.ExceptT
+                                           Servant.Server.Internal.ServantErr.ServantErr
+                                           GHC.Types.IO
+                                           (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])>_R
+                                        ->_R <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+                                              -> Control.Monad.Trans.Except.ExceptT
+                                                   Servant.Server.Internal.ServantErr.ServantErr
+                                                   GHC.Types.IO
+                                                   [CustomData.MangaInfo]>_R
+                                        ->_R Sym (GHC.Types.N:IO[0]
+                                                      <Data.Either.Either
+                                                         Servant.Server.Internal.ServantErr.ServantErr
+                                                         [CustomData.MangaInfo]>_R))
+                                       (<Control.Monad.Trans.Except.ExceptT
+                                           Servant.Server.Internal.ServantErr.ServantErr
+                                           GHC.Types.IO
+                                           (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])>_R
+                                        ->_R <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+                                              -> Control.Monad.Trans.Except.ExceptT
+                                                   Servant.Server.Internal.ServantErr.ServantErr
+                                                   GHC.Types.IO
+                                                   [CustomData.MangaInfo]>_R
+                                        ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                      <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                      <GHC.Types.IO>_R
+                                                      <[CustomData.MangaInfo]>_N)))))
+                        (Trans
+                             (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[CustomData.MangaInfo]>_N)
+                             (Trans
+                                  (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                 <Network.HTTP.Types.Method.StdMethod>_N
+                                                 <'Network.HTTP.Types.Method.GET>_N
+                                                 <200>_N
+                                                 <'[Servant.HTML.Lucid.HTML]>_N
+                                                 <[CustomData.MangaInfo]>_N
+                                                 <Servant.Server.Internal.Handler.Handler>_N)))
+                                  (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                                 <*>_N
+                                                 <"all">_N
+                                                 <Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.GET
+                                                    200
+                                                    '[Servant.HTML.Lucid.HTML]
+                                                    [CustomData.MangaInfo]>_N
+                                                 <Servant.Server.Internal.Handler.Handler>_N))))))) -}
+1f9cfbb21ab96770c6ab5ec90f6acd02
+  appl29 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      ()
+      (Servant.Server.Internal.Server
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.HTML.Lucid.HTML]
+            [CustomData.MangaInfo]))
+    -> Servant.Server.Internal.Router.Router ()
+  {- Unfolding: (Servant.Server.Internal.$w$croute9
+                   @ Network.HTTP.Types.Method.StdMethod
+                   @ '[Servant.HTML.Lucid.HTML]
+                   @ [CustomData.MangaInfo]
+                   @ 'Network.HTTP.Types.Method.GET
+                   @ 200
+                   @ '[]
+                   Main.$s$fAllCTRender:a
+                   Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                     `cast`
+                   (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                             <Network.HTTP.Types.Method.StdMethod>_N
+                             <'Network.HTTP.Types.Method.GET>_N))
+                   Main.$s$fHasServerTYPE:<|>context_$croute1
+                     `cast`
+                   (Trans
+                        (Sym (GHC.TypeNats.N:SNat[0] <200>_P))
+                        (Sym (GHC.TypeNats.N:KnownNat[0]) <200>_N))
+                   @ ()
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.HTML.Lucid.HTML]
+                           [CustomData.MangaInfo]))) -}
+cac310e7b7427d2ea2f646ffe73d421c
+  appl3 ::
+    Servant.Server.Internal.Router.Router'
+      () Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Unfolding: (Servant.Server.Internal.Router.choice
+                   @ ()
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl17
+                   Main.appl4) -}
+cd998b88a7105147609ecff35a9c89c3
+  appl30 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newByteArray#
+                        @ GHC.Prim.RealWorld
+                        10#
+                        s1 of ds1 { (#,#) ipv ipv1 ->
+                 Servant.Server.Internal.$wouter
+                   ipv1
+                   4#
+                   (GHC.CString.unpackCString#
+                      Main.$s$fHasServerTYPE:<|>context_$croute4)
+                   0#
+                   ipv }) -}
+357280aa877df86ac6f837f0e074b06a
+  appl4 ::
+    Servant.Server.Internal.Router.Router'
+      () Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Strictness: m2,
+     Unfolding: (Servant.Server.Internal.Router.CaptureRouter
+                   @ ()
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl5) -}
+c8cd072a7b9a4b040fc93f2a62e56d25
+  appl5 ::
+    Servant.Server.Internal.Router.Router'
+      (Data.Text.Internal.Text, ())
+      Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Strictness: m2,
+     Unfolding: (Servant.Server.Internal.Router.CaptureRouter
+                   @ (Data.Text.Internal.Text, ())
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl6) -}
+7b646a7853592e687de8e372ecb14ba3
+  appl6 ::
+    Servant.Server.Internal.Router.Router'
+      (Data.Text.Internal.Text, (Data.Text.Internal.Text, ()))
+      Servant.Server.Internal.RoutingApplication.RoutingApplication
+  {- Strictness: m2,
+     Unfolding: (Servant.Server.Internal.Router.CaptureRouter
+                   @ (Data.Text.Internal.Text, (Data.Text.Internal.Text, ()))
+                   @ Servant.Server.Internal.RoutingApplication.RoutingApplication
+                   Main.appl7) -}
+e756bafb42c17cc124fbbd31f153395f
+  appl7 ::
+    Servant.Server.Internal.Router.Router
+      (Data.Text.Internal.Text,
+       (Data.Text.Internal.Text, (Data.Text.Internal.Text, ())))
+  {- Unfolding: (Main.appl16 Main.appl8) -}
+e4dbd3afc7095decc347d85988f20682
+  appl8 ::
+    Servant.Server.Internal.RoutingApplication.Delayed
+      (Data.Text.Internal.Text,
+       (Data.Text.Internal.Text, (Data.Text.Internal.Text, ())))
+      (Servant.Server.Internal.ServerT
+         (Servant.API.Verbs.Verb
+            'Network.HTTP.Types.Method.GET
+            200
+            '[Servant.HTML.Lucid.HTML]
+            CustomData.PageUrl)
+         Servant.Server.Internal.Handler.Handler)
+  {- Unfolding: (Servant.Server.Internal.RoutingApplication.addCapture
+                   @ (Data.Text.Internal.Text, (Data.Text.Internal.Text, ()))
+                   @ GHC.Types.Int
+                   @ (Servant.Server.Internal.ServerT
+                        (Servant.API.Verbs.Verb
+                           'Network.HTTP.Types.Method.GET
+                           200
+                           '[Servant.HTML.Lucid.HTML]
+                           CustomData.PageUrl)
+                        Servant.Server.Internal.Handler.Handler)
+                   @ Data.Text.Internal.Text
+                   Main.appl10
+                     `cast`
+                   (Servant.Server.Internal.RoutingApplication.Delayed
+                      <(Data.Text.Internal.Text, (Data.Text.Internal.Text, ()))>_R
+                      (Sub (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                <*>_N
+                                <"pg">_N
+                                <GHC.Types.Int>_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.GET
+                                   200
+                                   '[Servant.HTML.Lucid.HTML]
+                                   CustomData.PageUrl>_N
+                                <Servant.Server.Internal.Handler.Handler>_N)))_R
+                   Main.appl9) -}
+3c074fd913fc7e14a6c7ab6e159d2a06
+  appl9 ::
+    Data.Text.Internal.Text
+    -> Servant.Server.Internal.RoutingApplication.DelayedIO
+         GHC.Types.Int
+  {- Arity: 1, Strictness: <L,U(U,U,U)>,
+     Unfolding: (\ (txt :: Data.Text.Internal.Text) ->
+                 case Web.Internal.HttpApiData.$fFromHttpApiDataInt_$sparseBounded
+                        Web.Internal.HttpApiData.$fFromHttpApiDataInt1
+                        txt of wild {
+                   Data.Either.Left x
+                   -> (Servant.Server.Internal.$fHasServerTYPE:>context19
+                         @ GHC.Types.Int)
+                        `cast`
+                      (Trans
+                           (<Network.Wai.Internal.Request>_R
+                            ->_R Trans
+                                     (<GHC.IORef.IORef
+                                         Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                      ->_R Trans
+                                               (Sym (GHC.Types.N:IO[0]
+                                                         <Servant.Server.Internal.RoutingApplication.RouteResult
+                                                            GHC.Types.Int>_R))
+                                               (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                         <GHC.Types.IO>_R <GHC.Types.Int>_N)))
+                                     (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                               <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                  GHC.Types.IO>_R
+                                               <GHC.Types.Int>_N)))
+                           (Trans
+                                (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                          <*>_N
+                                          <Network.Wai.Internal.Request>_R
+                                          <Control.Monad.Trans.Resource.Internal.ResourceT
+                                             (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                GHC.Types.IO)>_R
+                                          <GHC.Types.Int>_N))
+                                (Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <GHC.Types.Int>_N)))
+                   Data.Either.Right y
+                   -> (Servant.Server.Internal.RoutingApplication.$fApplicativeDelayedIO4
+                         @ GHC.Types.Int
+                         y)
+                        `cast`
+                      (Nth:3
+                           (Trans
+                                (<GHC.Types.Int>_R
+                                 ->_R Trans
+                                          (<Network.Wai.Internal.Request>_R
+                                           ->_R Trans
+                                                    (<GHC.IORef.IORef
+                                                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                                     ->_R Trans
+                                                              (Sym (GHC.Types.N:IO[0]
+                                                                        <Servant.Server.Internal.RoutingApplication.RouteResult
+                                                                           GHC.Types.Int>_R))
+                                                              (Sym (Servant.Server.Internal.RoutingApplication.N:RouteResultT[0]
+                                                                        <GHC.Types.IO>_R
+                                                                        <GHC.Types.Int>_N)))
+                                                    (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                              <Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                                 GHC.Types.IO>_R
+                                                              <GHC.Types.Int>_N)))
+                                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                    <*>_N
+                                                    <Network.Wai.Internal.Request>_R
+                                                    <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                       (Servant.Server.Internal.RoutingApplication.RouteResultT
+                                                          GHC.Types.IO)>_R
+                                                    <GHC.Types.Int>_N)))
+                                (<GHC.Types.Int>_R
+                                 ->_R Sym (Servant.Server.Internal.RoutingApplication.N:DelayedIO[0]) <GHC.Types.Int>_N))) }) -}
+a577f31f0a69241166ffe121a29422ee
+  mAPI :: Data.Proxy.Proxy Main.MangaAPI
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Proxy.Proxy @ * @ Main.MangaAPI) -}
+9a56576ba4a7025daee7d2eb24346824
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+c51270a6c79d174e8b8094bc5d7370dc
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Network.Wai.Handler.Warp.Run.run2
+                   (Network.Wai.Handler.Warp.Settings.Settings
+                      (GHC.Types.I# 8000#)
+                      Network.Wai.Handler.Warp.Settings.defaultSettings16
+                      Network.Wai.Handler.Warp.Settings.defaultOnException1
+                        `cast`
+                      (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
+                       ->_R <GHC.Exception.SomeException>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      Network.Wai.Handler.Warp.Settings.defaultOnExceptionResponse
+                      Network.Wai.Handler.Warp.Settings.defaultSettings15
+                        `cast`
+                      (<Network.Socket.Types.SockAddr>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                      Network.Wai.Handler.Warp.Settings.defaultSettings14
+                        `cast`
+                      (<Network.Socket.Types.SockAddr>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      Network.Wai.Handler.Warp.Settings.defaultSettings13
+                      (GHC.Base.Nothing @ Network.Wai.Handler.Warp.Timeout.Manager)
+                      Network.Wai.Handler.Warp.Settings.defaultSettings12
+                      Network.Wai.Handler.Warp.Settings.defaultSettings12
+                      Network.Wai.Handler.Warp.Settings.defaultSettings11
+                        `cast`
+                      (Sym (GHC.Types.N:IO[0] <()>_R))
+                      Network.Wai.Handler.Warp.Settings.defaultSettings10
+                        `cast`
+                      (<(forall a. GHC.Types.IO a -> GHC.Types.IO a)
+                        -> GHC.Types.IO ()>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      GHC.Types.False
+                      Network.Wai.Handler.Warp.Settings.defaultSettings9
+                        `cast`
+                      (<GHC.Types.IO ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      Network.Wai.Handler.Warp.Settings.defaultSettings6
+                      Network.Wai.Handler.Warp.Settings.defaultSettings4
+                      Network.Wai.Handler.Warp.Settings.ProxyProtocolNone
+                      Network.Wai.Handler.Warp.Settings.defaultSettings3
+                      GHC.Types.True
+                      Network.Wai.Handler.Warp.Settings.defaultSettings2
+                        `cast`
+                      (<Network.Wai.Internal.Request>_R
+                       ->_R <Network.HTTP.Types.Status.Status>_R
+                       ->_R <GHC.Base.Maybe GHC.Integer.Type.Integer>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      Network.Wai.Handler.Warp.Settings.defaultSettings1
+                        `cast`
+                      (<Network.Wai.Internal.Request>_R
+                       ->_R <Data.ByteString.Internal.ByteString>_R
+                       ->_R <GHC.Integer.Type.Integer>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                      (GHC.Base.Nothing @ GHC.Types.Int))
+                   Main.appl
+                   eta1) -}
+57f7fa3dc27b9dc8d8ebece986ca1ba0
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+21df40321490bdc0da2b9cdb8ab08233
+  server :: Servant.Server.Internal.Server Main.MangaAPI
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.server1
+                  `cast`
+                (Trans
+                     (Trans
+                          (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                         <Network.HTTP.Types.Method.StdMethod>_N
+                                         <'Network.HTTP.Types.Method.GET>_N
+                                         <200>_N
+                                         <'[Servant.HTML.Lucid.HTML]>_N
+                                         <[CustomData.MangaInfo]>_N
+                                         <Servant.Server.Internal.Handler.Handler>_N)))
+                          (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m4[0]
+                                         <*>_N
+                                         <"all">_N
+                                         <Servant.API.Verbs.Verb
+                                            'Network.HTTP.Types.Method.GET
+                                            200
+                                            '[Servant.HTML.Lucid.HTML]
+                                            [CustomData.MangaInfo]>_N
+                                         <Servant.Server.Internal.Handler.Handler>_N)))
+                      Servant.API.Alternative.:<|> Trans
+                                                       (Trans
+                                                            (<[GHC.Types.Char]>_R
+                                                             ->_R Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                                                <Network.HTTP.Types.Method.StdMethod>_N
+                                                                                <'Network.HTTP.Types.Method.GET>_N
+                                                                                <200>_N
+                                                                                <'[Servant.HTML.Lucid.HTML]>_N
+                                                                                <[CustomData.MangaChapter]>_N
+                                                                                <Servant.Server.Internal.Handler.Handler>_N)))
+                                                            (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                           <*>_N
+                                                                           <"manga">_N
+                                                                           <[GHC.Types.Char]>_N
+                                                                           <Servant.API.Verbs.Verb
+                                                                              'Network.HTTP.Types.Method.GET
+                                                                              200
+                                                                              '[Servant.HTML.Lucid.HTML]
+                                                                              [CustomData.MangaChapter]>_N
+                                                                           <Servant.Server.Internal.Handler.Handler>_N)))
+                                                        Servant.API.Alternative.:<|> Trans
+                                                                                         (<[GHC.Types.Char]>_R
+                                                                                          ->_R Trans
+                                                                                                   (<GHC.Types.Int>_R
+                                                                                                    ->_R Trans
+                                                                                                             (<GHC.Types.Int>_R
+                                                                                                              ->_R Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPEVerbm0[0]
+                                                                                                                                 <Network.HTTP.Types.Method.StdMethod>_N
+                                                                                                                                 <'Network.HTTP.Types.Method.GET>_N
+                                                                                                                                 <200>_N
+                                                                                                                                 <'[Servant.HTML.Lucid.HTML]>_N
+                                                                                                                                 <CustomData.PageUrl>_N
+                                                                                                                                 <Servant.Server.Internal.Handler.Handler>_N)))
+                                                                                                             (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                                                                            <*>_N
+                                                                                                                            <"pg">_N
+                                                                                                                            <GHC.Types.Int>_N
+                                                                                                                            <Servant.API.Verbs.Verb
+                                                                                                                               'Network.HTTP.Types.Method.GET
+                                                                                                                               200
+                                                                                                                               '[Servant.HTML.Lucid.HTML]
+                                                                                                                               CustomData.PageUrl>_N
+                                                                                                                            <Servant.Server.Internal.Handler.Handler>_N))))
+                                                                                                   (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                                                                  <*>_N
+                                                                                                                  <"ch">_N
+                                                                                                                  <GHC.Types.Int>_N
+                                                                                                                  <Servant.API.Capture.Capture
+                                                                                                                     "pg"
+                                                                                                                     GHC.Types.Int
+                                                                                                                   Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                                                        '[Servant.HTML.Lucid.HTML]
+                                                                                                                                        CustomData.PageUrl>_N
+                                                                                                                  <Servant.Server.Internal.Handler.Handler>_N))))
+                                                                                         (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:>m11[0]
+                                                                                                        <*>_N
+                                                                                                        <"manga">_N
+                                                                                                        <[GHC.Types.Char]>_N
+                                                                                                        <Servant.API.Capture.Capture
+                                                                                                           "ch"
+                                                                                                           GHC.Types.Int
+                                                                                                         Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                                                               "pg"
+                                                                                                                               GHC.Types.Int
+                                                                                                                             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                                                                  '[Servant.HTML.Lucid.HTML]
+                                                                                                                                                  CustomData.PageUrl)>_N
+                                                                                                        <Servant.Server.Internal.Handler.Handler>_N))))_R
+                                                       (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:<|>m[0]
+                                                                      <Servant.API.Capture.Capture
+                                                                         "manga" GHC.Base.String
+                                                                       Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                            '[Servant.HTML.Lucid.HTML]
+                                                                                            [CustomData.MangaChapter]>_N
+                                                                      <Servant.API.Capture.Capture
+                                                                         "manga" GHC.Base.String
+                                                                       Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                             "ch"
+                                                                                             GHC.Types.Int
+                                                                                           Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                                                 "pg"
+                                                                                                                 GHC.Types.Int
+                                                                                                               Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                                                    '[Servant.HTML.Lucid.HTML]
+                                                                                                                                    CustomData.PageUrl))>_N
+                                                                      <Servant.Server.Internal.Handler.Handler>_N))))_R
+                     (Sub (Sym (Servant.Server.Internal.D:R:ServerTTYPE:<|>m[0]
+                                    <"all"
+                                     Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                          '[Servant.HTML.Lucid.HTML]
+                                                          [CustomData.MangaInfo]>_N
+                                    <(Servant.API.Capture.Capture "manga" GHC.Base.String
+                                      Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                           '[Servant.HTML.Lucid.HTML]
+                                                           [CustomData.MangaChapter])
+                                     Servant.API.Alternative.:<|> (Servant.API.Capture.Capture
+                                                                     "manga" GHC.Base.String
+                                                                   Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                         "ch"
+                                                                                         GHC.Types.Int
+                                                                                       Servant.API.Sub.:> (Servant.API.Capture.Capture
+                                                                                                             "pg"
+                                                                                                             GHC.Types.Int
+                                                                                                           Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                                                '[Servant.HTML.Lucid.HTML]
+                                                                                                                                CustomData.PageUrl)))>_N
+                                    <Servant.Server.Internal.Handler.Handler>_N)))) -}
+46e6d47cb9d429dbacd8a5bc9642bfe6
+  server1 ::
+    Servant.Server.Internal.Handler.Handler [CustomData.MangaInfo]
+    Servant.API.Alternative.:<|> ((GHC.Base.String
+                                   -> Servant.Server.Internal.Handler.Handler
+                                        [CustomData.MangaChapter])
+                                  Servant.API.Alternative.:<|> (GHC.Base.String
+                                                                -> GHC.Types.Int
+                                                                -> GHC.Types.Int
+                                                                -> Servant.Server.Internal.Handler.Handler
+                                                                     CustomData.PageUrl))
+  {- Strictness: m,
+     Unfolding: (Servant.API.Alternative.:<|>
+                   @ (Servant.Server.Internal.Handler.Handler [CustomData.MangaInfo])
+                   @ ((GHC.Base.String
+                       -> Servant.Server.Internal.Handler.Handler
+                            [CustomData.MangaChapter])
+                      Servant.API.Alternative.:<|> (GHC.Base.String
+                                                    -> GHC.Types.Int
+                                                    -> GHC.Types.Int
+                                                    -> Servant.Server.Internal.Handler.Handler
+                                                         CustomData.PageUrl))
+                   Handlers.titles1
+                     `cast`
+                   (Trans
+                        (Nth:3
+                             (Nth:3
+                                  (Trans
+                                       (<Control.Monad.Trans.Except.ExceptT
+                                           Servant.Server.Internal.ServantErr.ServantErr
+                                           GHC.Types.IO
+                                           (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])>_R
+                                        ->_R <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+                                              -> Control.Monad.Trans.Except.ExceptT
+                                                   Servant.Server.Internal.ServantErr.ServantErr
+                                                   GHC.Types.IO
+                                                   [CustomData.MangaInfo]>_R
+                                        ->_R Sym (GHC.Types.N:IO[0]
+                                                      <Data.Either.Either
+                                                         Servant.Server.Internal.ServantErr.ServantErr
+                                                         [CustomData.MangaInfo]>_R))
+                                       (<Control.Monad.Trans.Except.ExceptT
+                                           Servant.Server.Internal.ServantErr.ServantErr
+                                           GHC.Types.IO
+                                           (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])>_R
+                                        ->_R <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+                                              -> Control.Monad.Trans.Except.ExceptT
+                                                   Servant.Server.Internal.ServantErr.ServantErr
+                                                   GHC.Types.IO
+                                                   [CustomData.MangaInfo]>_R
+                                        ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                      <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                      <GHC.Types.IO>_R
+                                                      <[CustomData.MangaInfo]>_N)))))
+                        (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[CustomData.MangaInfo]>_N))
+                   Main.server2) -}
+6a8383b83ea457f7a02ed654df80c9b3
+  server2 ::
+    (GHC.Base.String
+     -> Servant.Server.Internal.Handler.Handler
+          [CustomData.MangaChapter])
+    Servant.API.Alternative.:<|> (GHC.Base.String
+                                  -> GHC.Types.Int
+                                  -> GHC.Types.Int
+                                  -> Servant.Server.Internal.Handler.Handler CustomData.PageUrl)
+  {- Strictness: m,
+     Unfolding: (Servant.API.Alternative.:<|>
+                   @ (GHC.Base.String
+                      -> Servant.Server.Internal.Handler.Handler
+                           [CustomData.MangaChapter])
+                   @ (GHC.Base.String
+                      -> GHC.Types.Int
+                      -> GHC.Types.Int
+                      -> Servant.Server.Internal.Handler.Handler CustomData.PageUrl)
+                   Handlers.chapters1
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <Data.Either.Either
+                                          Servant.Server.Internal.ServantErr.ServantErr
+                                          [CustomData.MangaChapter]>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                            <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                            <GHC.Types.IO>_R
+                                            <[CustomData.MangaChapter]>_N))
+                                  (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[CustomData.MangaChapter]>_N)))
+                   Handlers.pages1
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R <GHC.Types.Int>_R
+                    ->_R <GHC.Types.Int>_R
+                    ->_R Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <Data.Either.Either
+                                          Servant.Server.Internal.ServantErr.ServantErr
+                                          CustomData.PageUrl>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                            <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                            <GHC.Types.IO>_R
+                                            <CustomData.PageUrl>_N))
+                                  (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <CustomData.PageUrl>_N)))) -}
+"SPEC/Main $fAllCTRender:a @ HTML @ '[] @ PageUrl" [orphan] forall (v2 :: Servant.API.ContentTypes.AllMimeRender
+                                                                            '[Servant.HTML.Lucid.HTML]
+                                                                            CustomData.PageUrl)
+                                                                   (v1 :: Servant.API.ContentTypes.AllMime
+                                                                            '[])
+                                                                   (v :: Servant.API.ContentTypes.Accept
+                                                                           Servant.HTML.Lucid.HTML)
+  Servant.API.ContentTypes.$fAllCTRender:a @ Servant.HTML.Lucid.HTML
+                                           @ '[]
+                                           @ CustomData.PageUrl
+                                           v
+                                           v1
+                                           v2
+  = Main.$s$fAllCTRender:a2
+"SPEC/Main $fAllCTRender:a @ HTML @ '[] @ [MangaChapter]" [orphan] forall (v2 :: Servant.API.ContentTypes.AllMimeRender
+                                                                                   '[Servant.HTML.Lucid.HTML]
+                                                                                   [CustomData.MangaChapter])
+                                                                          (v1 :: Servant.API.ContentTypes.AllMime
+                                                                                   '[])
+                                                                          (v :: Servant.API.ContentTypes.Accept
+                                                                                  Servant.HTML.Lucid.HTML)
+  Servant.API.ContentTypes.$fAllCTRender:a @ Servant.HTML.Lucid.HTML
+                                           @ '[]
+                                           @ [CustomData.MangaChapter]
+                                           v
+                                           v1
+                                           v2
+  = Main.$s$fAllCTRender:a1
+"SPEC/Main $fAllCTRender:a @ HTML @ '[] @ [MangaInfo]" [orphan] forall (v2 :: Servant.API.ContentTypes.AllMimeRender
+                                                                                '[Servant.HTML.Lucid.HTML]
+                                                                                [CustomData.MangaInfo])
+                                                                       (v1 :: Servant.API.ContentTypes.AllMime
+                                                                                '[])
+                                                                       (v :: Servant.API.ContentTypes.Accept
+                                                                               Servant.HTML.Lucid.HTML)
+  Servant.API.ContentTypes.$fAllCTRender:a @ Servant.HTML.Lucid.HTML
+                                           @ '[]
+                                           @ [CustomData.MangaInfo]
+                                           v
+                                           v1
+                                           v2
+  = Main.$s$fAllCTRender:a
+"SPEC/Main $fAllMimeRender:a0 @ HTML @ PageUrl" [orphan] forall (v :: Servant.API.ContentTypes.MimeRender
+                                                                        Servant.HTML.Lucid.HTML
+                                                                        CustomData.PageUrl)
+  Servant.API.ContentTypes.$fAllMimeRender:a0 @ Servant.HTML.Lucid.HTML
+                                              @ CustomData.PageUrl
+                                              v
+  = Main.$s$fAllCTRender:a_$s$fAllMimeRender:a2
+"SPEC/Main $fAllMimeRender:a0 @ HTML @ [MangaChapter]" [orphan] forall (v :: Servant.API.ContentTypes.MimeRender
+                                                                               Servant.HTML.Lucid.HTML
+                                                                               [CustomData.MangaChapter])
+  Servant.API.ContentTypes.$fAllMimeRender:a0 @ Servant.HTML.Lucid.HTML
+                                              @ [CustomData.MangaChapter]
+                                              v
+  = Main.$s$fAllCTRender:a_$s$fAllMimeRender:a1
+"SPEC/Main $fAllMimeRender:a0 @ HTML @ [MangaInfo]" [orphan] forall (v :: Servant.API.ContentTypes.MimeRender
+                                                                            Servant.HTML.Lucid.HTML
+                                                                            [CustomData.MangaInfo])
+  Servant.API.ContentTypes.$fAllMimeRender:a0 @ Servant.HTML.Lucid.HTML
+                                              @ [CustomData.MangaInfo]
+                                              v
+  = Main.$s$fAllCTRender:a_$s$fAllMimeRender:a0
+"SPEC/Main $fMimeRenderTYPEHTMLa @ PageUrl" [orphan] forall (v :: Lucid.Base.ToHtml
+                                                                    CustomData.PageUrl)
+  Servant.HTML.Lucid.$fMimeRenderTYPEHTMLa @ CustomData.PageUrl v
+  = Main.$s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa2
+"SPEC/Main $fMimeRenderTYPEHTMLa @ [MangaChapter]" [orphan] forall (v :: Lucid.Base.ToHtml
+                                                                           [CustomData.MangaChapter])
+  Servant.HTML.Lucid.$fMimeRenderTYPEHTMLa @ [CustomData.MangaChapter]
+                                           v
+  = Main.$s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa1
+"SPEC/Main $fMimeRenderTYPEHTMLa @ [MangaInfo]" [orphan] forall (v :: Lucid.Base.ToHtml
+                                                                        [CustomData.MangaInfo])
+  Servant.HTML.Lucid.$fMimeRenderTYPEHTMLa @ [CustomData.MangaInfo] v
+  = Main.$s$fAllCTRender:a_$s$fMimeRenderTYPEHTMLa
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

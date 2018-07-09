@@ -1,0 +1,10 @@
+Configuring errors-2.2.2...
+Preprocessing library for errors-2.2.2..
+Building library for errors-2.2.2..
+[1 of 5] Compiling Control.Error.Util ( Control/Error/Util.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Error/Util.o )
+[2 of 5] Compiling Control.Error.Safe ( Control/Error/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Error/Safe.o )
+[3 of 5] Compiling Data.EitherR     ( Data/EitherR.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/EitherR.o )
+[4 of 5] Compiling Control.Error.Script ( Control/Error/Script.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Error/Script.o )
+[5 of 5] Compiling Control.Error    ( Control/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Error.o )
+Installing library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/errors-2.2.2-CBbpQXkPMpSIatgjqQjYvG
+Registering library for errors-2.2.2..

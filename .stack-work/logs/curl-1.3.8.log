@@ -1,0 +1,30 @@
+[1 of 2] Compiling Main             ( /tmp/stack23174/curl-1.3.8/Setup.hs, /tmp/stack23174/curl-1.3.8/.stack-work/dist/x86_64-linux/Cabal-2.0.1.0/setup/Main.o )
+[2 of 2] Compiling StackSetupShim   ( /home/dprester/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack23174/curl-1.3.8/.stack-work/dist/x86_64-linux/Cabal-2.0.1.0/setup/StackSetupShim.o )
+Linking /tmp/stack23174/curl-1.3.8/.stack-work/dist/x86_64-linux/Cabal-2.0.1.0/setup/setup ...
+Configuring curl-1.3.8...
+Preprocessing library for curl-1.3.8..
+Building library for curl-1.3.8..
+[1 of 8] Compiling Network.Curl.Code ( Network/Curl/Code.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Code.o )
+[2 of 8] Compiling Network.Curl.Debug ( Network/Curl/Debug.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Debug.o )
+[3 of 8] Compiling Network.Curl.Types ( Network/Curl/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Types.o )
+[4 of 8] Compiling Network.Curl.Post ( Network/Curl/Post.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Post.o )
+[5 of 8] Compiling Network.Curl.Opts ( Network/Curl/Opts.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Opts.o )
+[6 of 8] Compiling Network.Curl.Info ( Network/Curl/Info.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Info.o )
+[7 of 8] Compiling Network.Curl.Easy ( Network/Curl/Easy.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl/Easy.o )
+
+[;1mNetwork/Curl/Easy.hs:27:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wtabs[0m[0m[;1m][0m[0m[;1m
+    Tab character found here, and in two further locations.
+    Please use spaces instead.[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m27 |[0m[0m [;1m[35m        [0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^[0m[0m
+[0m[0m[0m[8 of 8] Compiling Network.Curl     ( Network/Curl.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Curl.o )
+
+[;1mNetwork/Curl.hs:278:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wtabs[0m[0m[;1m][0m[0m[;1m
+    Tab character found here, and in 8 further locations.
+    Please use spaces instead.[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m278 |[0m[0m [;1m[35m        [0m[0m              -> IO (CurlResponse_ hdrTy bufTy)
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^[0m[0m
+[0m[0m[0mInstalling library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/curl-1.3.8-IzamVZyRWXNLrLvnHgEk2A
+Registering library for curl-1.3.8..

@@ -1,0 +1,529 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-09 01:34:35.357289 UTC
+
+interface main:Handlers 8022
+  interface hash: 3ce27c8d39eda1d4d42d423f6e587db1
+  ABI hash: fa4b7198c4801e0e6e6bf2a657fff0f5
+  export-list hash: 76dfc913564ee5bff0747eddd030db02
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8a8ebb0581bb48737638b109bfa05fa4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Handlers.chapters
+  Handlers.pages
+  Handlers.titles
+module dependencies: Api CustomData
+package dependencies: aeson-1.2.3.0 appar-0.1.4 array-0.5.2.0
+                      async-2.1.1.1 attoparsec-0.13.2.0 attoparsec-iso8601-1.0.0.0
+                      auto-update-0.1.4 base-4.10.1.0 base-compat-0.9.3
+                      base16-bytestring-0.1.1.6 base64-bytestring-1.0.0.1 basement-0.0.4
+                      binary-0.8.5.1 blaze-builder-0.4.0.2 blaze-html-0.9.0.1
+                      blaze-markup-0.8.0.0 byteorder-1.0.4 bytestring-0.10.8.2
+                      case-insensitive-1.2.0.10 containers-0.5.10.2 cryptonite-0.24
+                      curl-1.3.8 data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.3.0
+                      directory-1.3.0.2 dlist-0.8.0.3 errors-2.2.2 exceptions-0.8.3
+                      file-embed-0.0.10.1 filepath-1.4.1.2 foundation-0.0.17
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 hashable-1.2.6.1
+                      http-api-data-0.3.7.1 http-date-0.0.6.1 http-media-0.7.1.1
+                      http-types-0.9.1 http2-1.6.3 integer-gmp-1.0.1.0
+                      integer-logarithms-1.0.2 iproute-1.7.1 lifted-base-0.2.3.11
+                      lucid-2.9.9 memory-0.14.10 mime-types-0.1.0.7 mmorph-1.1.0
+                      monad-control-1.0.2.2 mtl-2.2.1 natural-transformation-0.4
+                      network-2.6.3.2 network-uri-2.6.1.0 old-locale-1.0.0.7
+                      parsec-3.1.11 pretty-1.1.3.3 primitive-0.6.2.0 psqueues-0.2.4.0
+                      random-1.1 regex-base-0.93.2 resourcet-1.1.10 scalpel-0.5.1
+                      scalpel-core-0.5.1 scientific-0.3.5.2 servant-0.11
+                      servant-lucid-0.7.1 servant-server-0.11.0.1 simple-sendfile-0.2.26
+                      stm-2.4.4.1 streaming-commons-0.1.18 string-conversions-0.4.0.1
+                      tagged-0.8.5 tagsoup-0.14.2 template-haskell-2.12.0.0 text-1.2.2.2
+                      text-conversions-0.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      time-1.8.0.2 time-locale-compat-0.1.1.3 transformers-0.5.2.0
+                      transformers-base-0.4.4 unexceptionalio-0.3.0 unix-2.7.2.2
+                      unix-compat-0.5.0.1 unliftio-core-0.1.0.0
+                      unordered-containers-0.2.8.0 uri-bytestring-0.3.0.1
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vault-0.3.0.7 vector-0.12.0.1
+                      wai-3.2.1.1 wai-app-static-3.1.6.1 warp-3.2.13 word8-0.1.3
+                      zlib-0.6.1.2
+orphans: basement-0.0.4:Basement.UArray.Base
+         basement-0.0.4:Basement.Block network-2.6.3.2:Network.Socket
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         attoparsec-0.13.2.0:Data.Attoparsec.ByteString.Char8
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         attoparsec-0.13.2.0:Data.Attoparsec.Text.Internal
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         stm-2.4.4.1:Control.Monad.STM
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         hashable-1.2.6.1:Data.Hashable.Generic text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.2.2:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: aeson-1.2.3.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.0:Data.Attoparsec.Internal.Types
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats basement-0.0.4:Basement.Block.Base
+                         basement-0.0.4:Basement.BoxedArray basement-0.0.4:Basement.Monad
+                         basement-0.0.4:Basement.MutableBuilder basement-0.0.4:Basement.Nat
+                         basement-0.0.4:Basement.NonEmpty
+                         basement-0.0.4:Basement.Numerical.Subtractive
+                         basement-0.0.4:Basement.String
+                         basement-0.0.4:Basement.String.Encoding.ASCII7
+                         basement-0.0.4:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.4:Basement.String.Encoding.UTF16
+                         basement-0.0.4:Basement.String.Encoding.UTF32
+                         basement-0.0.4:Basement.Types.AsciiString
+                         basement-0.0.4:Basement.Types.OffsetSize
+                         basement-0.0.4:Basement.UArray.Base
+                         basement-0.0.4:Basement.UTF8.Base
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         cryptonite-0.24:Crypto.Hash.Blake2
+                         cryptonite-0.24:Crypto.Hash.Blake2b
+                         cryptonite-0.24:Crypto.Hash.Blake2bp
+                         cryptonite-0.24:Crypto.Hash.Blake2s
+                         cryptonite-0.24:Crypto.Hash.Blake2sp
+                         cryptonite-0.24:Crypto.Hash.Keccak cryptonite-0.24:Crypto.Hash.MD2
+                         cryptonite-0.24:Crypto.Hash.MD4 cryptonite-0.24:Crypto.Hash.MD5
+                         cryptonite-0.24:Crypto.Hash.RIPEMD160
+                         cryptonite-0.24:Crypto.Hash.SHA1 cryptonite-0.24:Crypto.Hash.SHA224
+                         cryptonite-0.24:Crypto.Hash.SHA256 cryptonite-0.24:Crypto.Hash.SHA3
+                         cryptonite-0.24:Crypto.Hash.SHA384
+                         cryptonite-0.24:Crypto.Hash.SHA512
+                         cryptonite-0.24:Crypto.Hash.SHA512t
+                         cryptonite-0.24:Crypto.Hash.SHAKE
+                         cryptonite-0.24:Crypto.Hash.Skein256
+                         cryptonite-0.24:Crypto.Hash.Skein512
+                         cryptonite-0.24:Crypto.Hash.Tiger
+                         cryptonite-0.24:Crypto.Hash.Whirlpool dlist-0.8.0.3:Data.DList
+                         foundation-0.0.17:Foundation.Array.Bitmap
+                         foundation-0.0.17:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.17:Foundation.Collection.Buildable
+                         foundation-0.0.17:Foundation.Collection.Element
+                         foundation-0.0.17:Foundation.Collection.Keyed
+                         foundation-0.0.17:Foundation.Collection.Mutable
+                         foundation-0.0.17:Foundation.Tuple
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.7.1:Web.Internal.FormUrlEncoded
+                         iproute-1.7.1:Data.IP.Addr iproute-1.7.1:Data.IP.Range
+                         main:CustomData monad-control-1.0.2.2:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         resourcet-1.1.10:Control.Monad.Trans.Resource.Internal
+                         servant-0.11:Servant.API.ContentTypes
+                         servant-0.11:Servant.API.IsSecure servant-0.11:Servant.API.Verbs
+                         servant-0.11:Servant.Utils.Links
+                         servant-server-0.11.0.1:Servant.Server.Internal
+                         servant-server-0.11.0.1:Servant.Server.Internal.BasicAuth
+                         servant-server-0.11.0.1:Servant.Server.Internal.Handler
+                         servant-server-0.11.0.1:Servant.Server.Internal.RoutingApplication
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         unordered-containers-0.2.8.0:Data.HashMap.Base
+                         unordered-containers-0.2.8.0:Data.HashSet
+                         uri-bytestring-0.3.0.1:URI.ByteString.Types
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2:Codec.Compression.Zlib.Stream
+import  -/  base-4.10.1.0:Control.Monad.IO.Class 9d78cd0f73a837f3c00753bd212b9f2c
+import  -/  base-4.10.1.0:Data.Maybe 07738c5485acb328136bb15596f8b845
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:Text.Read 9e862e012b3c71e83cb56fb456188f44
+import  -/  lucid-2.9.9:Lucid.Base c76bc22547808ed6245e5653874108fe
+import  -/  lucid-2.9.9:Lucid.Html5 2a818ab1959feca6f116f9997a86f124
+import  -/  Api 91cc8628d9336d8ab0c353f27b6d1957
+  exports: b38a67fea32db10a589fc777f14db154
+  getChapterLen 4a9c042986626d4bccebaefddd1f3da5
+  getMangaChapters 2fb247990434e05a029112c7cf41581a
+  getMangaImg 2757f9ecfb7ab733f28868d577e4d20d
+  getMangaTitles 8298c4475b7f0d1846bc05d7b5ea08ce
+import  -/  CustomData 38f0bd6f3d2c462d07d1369c8ca7c65e
+  exports: ee9b8754e4e2243bca463c8d5cb7256a
+  MangaChapter 5db6bd0dbd1f5a8884924fc9ce8a7fb9
+  MangaChapter 7b216473ebbafcfc5cf879f5b7cee452
+  MangaInfo 3a033b366f41f86d46c7fdc7e19843ef
+  MangaInfo 58540e6d7af1ea659c13eea80b143eab
+  PageUrl dada9edef27153283be97f687b42de37
+  PageUrl 0e5b94a6d34f31e2eff4249dd112b3a8
+import  -/  servant-0.11:Servant.API 7461b83ee1c7845389b2479815c01e7d
+import  -/  servant-lucid-0.7.1:Servant.HTML.Lucid 62e80f947509e9956d7c8ffea3e2cbe9
+import  -/  servant-server-0.11.0.1:Servant 0e3fecd900ea68cb253af5379702bf65
+import  -/  servant-server-0.11.0.1:Servant.Server.Internal.Handler ae5c491f4ea38ea4a3707d162340ce96
+import  -/  text-conversions-0.3.0:Data.Text.Conversions e9e91238becd91f5aa85c9c56f722c0b
+import  -/  warp-3.2.13:Network.Wai.Handler.Warp 625f1aa459431491d5d108d2c1653b51
+1b53a38205e7e6248d7ff6d90120dfea
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Handlers.$trModule3
+                   Handlers.$trModule1) -}
+a81ab4d9bec0345fa6e8a871688534d1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Handlers.$trModule2) -}
+428d931ef23a88388809565750a1f8ff
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Handlers"#) -}
+05c245f062acc248463f3a7af77ab561
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Handlers.$trModule4) -}
+5799eee5a3f6e1e0a6b30dfd3823051f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+81b298a9c095d06fb3850d795cb60aec
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+fea4085f014d16dcf2f6025a2c43f860
+  $wouter1 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+883b002d3b1a32082aadea9b630fcc8b
+  $wouter2 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+8d0b4e709901b8e19bb7cf257399c435
+  $wouter3 ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+c6d7d29116916f9fa914260f38052413
+  chapters ::
+    GHC.Base.String
+    -> Servant.Server.Internal.Handler.Handler
+         [CustomData.MangaChapter]
+  {- Arity: 2, Strictness: <L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handlers.chapters1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Trans
+                          (Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Servant.Server.Internal.ServantErr.ServantErr
+                                       [CustomData.MangaChapter]>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                         <GHC.Types.IO>_R
+                                         <[CustomData.MangaChapter]>_N))
+                               (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[CustomData.MangaChapter]>_N))) -}
+4f36c0f831c8d4ebf75a243204cccd3c
+  chapters1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            [CustomData.MangaChapter] #)
+  {- Arity: 2, Strictness: <L,1*U><S,U>,
+     Unfolding: (\ (manga :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Text.HTML.Scalpel.Internal.Scrape.URL.$wscrapeURLWithConfig
+                        @ GHC.Base.String
+                        @ [(GHC.Base.String, GHC.Base.String)]
+                        Text.StringLike.$fStringLike[]
+                        Api.getChapterLen19
+                        (GHC.Base.++ @ GHC.Types.Char Api.mangaBaseURL manga)
+                        Api.getMangaChapters2
+                          `cast`
+                        (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                                  <GHC.Base.String>_R <[(GHC.Base.String, GHC.Base.String)]>_R))
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ [CustomData.MangaChapter]
+                      (case ipv1 of wild {
+                         GHC.Base.Nothing
+                         -> case Data.Maybe.fromJust1 ret_ty [CustomData.MangaChapter] of {}
+                         GHC.Base.Just x
+                         -> GHC.Base.map
+                              @ (GHC.Base.String, GHC.Base.String)
+                              @ CustomData.MangaChapter
+                              Handlers.chapters2
+                              x }) #) }) -}
+9dde9245831869a6816750e63fef53cf
+  chapters2 ::
+    (GHC.Base.String, GHC.Base.String) -> CustomData.MangaChapter
+  {- Arity: 1, Strictness: <S,1*U(1*U,U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: (GHC.Base.String, GHC.Base.String)) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 CustomData.MangaChapter
+                   (case GHC.Magic.runRW#
+                           @ ('GHC.Types.TupleRep
+                                '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                           @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                           (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.Prim.newByteArray#
+                                   @ GHC.Prim.RealWorld
+                                   10#
+                                   s1 of ds1 { (#,#) ipv ipv1 ->
+                            Handlers.$wouter ipv1 4# ww1 0# ipv }) of ds1 { (#,#) ipv ipv1 ->
+                    ipv1 })
+                   ww2 }) -}
+e48b6f7ce8334997eda7df1037224ddd
+  pages ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Servant.Server.Internal.Handler.Handler CustomData.PageUrl
+  {- Arity: 4, Strictness: <L,U><L,U(U)><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handlers.pages1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Trans
+                          (Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       Servant.Server.Internal.ServantErr.ServantErr
+                                       CustomData.PageUrl>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                         <GHC.Types.IO>_R
+                                         <CustomData.PageUrl>_N))
+                               (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <CustomData.PageUrl>_N))) -}
+8afaac8bddd804dad32b0bb78d5c7a45
+  pages1 ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr CustomData.PageUrl #)
+  {- Arity: 4, Strictness: <L,U><L,U(U)><L,U(U)><S,U>,
+     Unfolding: (\ (manga :: GHC.Base.String)
+                   (ch :: GHC.Types.Int)
+                   (pg :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Api.getMangaImg1 manga ch pg eta of ds1 { (#,#) ipv ipv1 ->
+                 case Api.getChapterLen1 manga ch ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ CustomData.PageUrl
+                      (CustomData.PageUrl
+                         manga
+                         ch
+                         pg
+                         (case Text.Read.readEither8
+                                 @ GHC.Types.Int
+                                 (Text.ParserCombinators.ReadP.run
+                                    @ GHC.Types.Int
+                                    Handlers.pages4
+                                    (case ipv3 of wild {
+                                       GHC.Base.Nothing -> Data.Maybe.fromJust1 @ GHC.Base.String
+                                       GHC.Base.Just x -> x })) of wild {
+                            [] -> Handlers.pages3
+                            : x ds
+                            -> case ds of wild1 { [] -> x : ipv4 ipv5 -> Handlers.pages2 } })
+                         (case ipv1 of wild {
+                            GHC.Base.Nothing
+                            -> case Data.Maybe.fromJust1 ret_ty Data.Text.Internal.Text of {}
+                            GHC.Base.Just x
+                            -> case GHC.Magic.runRW#
+                                      @ ('GHC.Types.TupleRep
+                                           '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                                      @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                           Data.Text.Internal.Text #)
+                                      (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                       case GHC.Prim.newByteArray#
+                                              @ GHC.Prim.RealWorld
+                                              10#
+                                              s1 of ds3 { (#,#) ipv4 ipv5 ->
+                                       Handlers.$wouter1
+                                         ipv5
+                                         4#
+                                         x
+                                         0#
+                                         ipv4 }) of ds3 { (#,#) ipv4 ipv5 ->
+                               ipv5 } })) #) } }) -}
+959550700e254d6de6073517c611bfc8
+  pages2 :: GHC.Types.Int
+  {- Strictness: x -}
+c23c79ab2a8a61c6f455ce19e705858f
+  pages3 :: GHC.Types.Int
+  {- Strictness: x -}
+cded214fdd3898699647cf86b1741ef8
+  pages4 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: (GHC.Read.$fReadInt_$sreadNumber
+                   GHC.Read.$fReadInt2
+                   Text.ParserCombinators.ReadPrec.minPrec
+                   @ GHC.Types.Int
+                   (Text.Read.readEither7 @ GHC.Types.Int)) -}
+e26994fd1bb4d6b5fefca640aa256bdb
+  titles ::
+    Servant.Server.Internal.Handler.Handler [CustomData.MangaInfo]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handlers.titles1
+                  `cast`
+                (Trans
+                     (Nth:3
+                          (Nth:3
+                               (Trans
+                                    (<Control.Monad.Trans.Except.ExceptT
+                                        Servant.Server.Internal.ServantErr.ServantErr
+                                        GHC.Types.IO
+                                        (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])>_R
+                                     ->_R <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+                                           -> Control.Monad.Trans.Except.ExceptT
+                                                Servant.Server.Internal.ServantErr.ServantErr
+                                                GHC.Types.IO
+                                                [CustomData.MangaInfo]>_R
+                                     ->_R Sym (GHC.Types.N:IO[0]
+                                                   <Data.Either.Either
+                                                      Servant.Server.Internal.ServantErr.ServantErr
+                                                      [CustomData.MangaInfo]>_R))
+                                    (<Control.Monad.Trans.Except.ExceptT
+                                        Servant.Server.Internal.ServantErr.ServantErr
+                                        GHC.Types.IO
+                                        (GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)])>_R
+                                     ->_R <GHC.Base.Maybe [(GHC.Base.String, GHC.Base.String)]
+                                           -> Control.Monad.Trans.Except.ExceptT
+                                                Servant.Server.Internal.ServantErr.ServantErr
+                                                GHC.Types.IO
+                                                [CustomData.MangaInfo]>_R
+                                     ->_R Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                   <Servant.Server.Internal.ServantErr.ServantErr>_N
+                                                   <GHC.Types.IO>_R
+                                                   <[CustomData.MangaInfo]>_N)))))
+                     (Sym (Servant.Server.Internal.Handler.N:Handler[0]) <[CustomData.MangaInfo]>_N)) -}
+658871ea7d8fdd65c5ed864f98ba24d9
+  titles1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            Servant.Server.Internal.ServantErr.ServantErr
+            [CustomData.MangaInfo] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Text.HTML.Scalpel.Internal.Scrape.URL.$wscrapeURLWithConfig
+                        @ GHC.Base.String
+                        @ [(GHC.Base.String, GHC.Base.String)]
+                        Text.StringLike.$fStringLike[]
+                        Api.getChapterLen19
+                        (GHC.CString.unpackCString# Api.getMangaTitles17)
+                        Api.getMangaTitles2
+                          `cast`
+                        (Sym (Text.HTML.Scalpel.Internal.Scrape.N:Scraper[0]
+                                  <GHC.Base.String>_R <[(GHC.Base.String, GHC.Base.String)]>_R))
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Data.Either.Right
+                      @ Servant.Server.Internal.ServantErr.ServantErr
+                      @ [CustomData.MangaInfo]
+                      (case ipv1 of wild {
+                         GHC.Base.Nothing
+                         -> case Data.Maybe.fromJust1 ret_ty [CustomData.MangaInfo] of {}
+                         GHC.Base.Just x
+                         -> GHC.Base.map
+                              @ (GHC.Base.String, GHC.Base.String)
+                              @ CustomData.MangaInfo
+                              Handlers.titles2
+                              x }) #) }) -}
+2de86d17d05325fcf4fc475687ce961d
+  titles2 ::
+    (GHC.Base.String, GHC.Base.String) -> CustomData.MangaInfo
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>m,
+     Unfolding: (\ (ds :: (GHC.Base.String, GHC.Base.String)) ->
+                 case ds of wild { (,) f s ->
+                 CustomData.MangaInfo
+                   (case GHC.Magic.runRW#
+                           @ ('GHC.Types.TupleRep
+                                '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                           @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                           (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.Prim.newByteArray#
+                                   @ GHC.Prim.RealWorld
+                                   10#
+                                   s1 of ds1 { (#,#) ipv ipv1 ->
+                            Handlers.$wouter3 ipv1 4# f 0# ipv }) of ds1 { (#,#) ipv ipv1 ->
+                    ipv1 })
+                   (case GHC.Magic.runRW#
+                           @ ('GHC.Types.TupleRep
+                                '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                           @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                           (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case GHC.Prim.newByteArray#
+                                   @ GHC.Prim.RealWorld
+                                   10#
+                                   s1 of ds1 { (#,#) ipv ipv1 ->
+                            Handlers.$wouter2 ipv1 4# s 0# ipv }) of ds1 { (#,#) ipv ipv1 ->
+                    ipv1 }) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

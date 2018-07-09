@@ -1,0 +1,48 @@
+Configuring elm-export-0.6.0.1...
+Warning: The package has an extraneous version range for a dependency on an
+internal library: elm-export >=0.6.0.1. This version range includes the
+current package but isn't needed as the current package's library will always
+be used.
+Preprocessing library for elm-export-0.6.0.1..
+Building library for elm-export-0.6.0.1..
+[1 of 7] Compiling Elm.Common       ( src/Elm/Common.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm/Common.o )
+[2 of 7] Compiling Elm.File         ( src/Elm/File.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm/File.o )
+[3 of 7] Compiling Elm.Type         ( src/Elm/Type.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm/Type.o )
+[4 of 7] Compiling Elm.Record       ( src/Elm/Record.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm/Record.o )
+[5 of 7] Compiling Elm.Encoder      ( src/Elm/Encoder.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm/Encoder.o )
+
+[;1msrc/Elm/Encoder.hs:37:3: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wincomplete-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘render’:
+        Patterns not matched:
+            (NamedConstructor _ _)
+            (MultipleConstructors _)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m37 |[0m[0m   [;1m[35mrender (RecordConstructor _ value) = do[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1msrc/Elm/Encoder.hs:42:3: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wincomplete-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘render’: Patterns not matched: ElmEmpty[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m42 |[0m[0m   [;1m[35mrender (ElmField name value) = do[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m[6 of 7] Compiling Elm.Decoder      ( src/Elm/Decoder.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm/Decoder.o )
+
+[;1msrc/Elm/Decoder.hs:40:3: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wincomplete-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘render’:
+        Patterns not matched: (MultipleConstructors _)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m40 |[0m[0m   [;1m[35mrender (NamedConstructor name value) = do[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1msrc/Elm/Decoder.hs:48:3: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wincomplete-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘render’: Patterns not matched: ElmEmpty[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m48 |[0m[0m   [;1m[35mrender (ElmRef name) = pure $ "decode" <> stext name[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m[7 of 7] Compiling Elm              ( src/Elm.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Elm.o )
+Installing library in /home/dprester/.stack/snapshots/x86_64-linux/lts-10.0/8.2.2/lib/x86_64-linux-ghc-8.2.2/elm-export-0.6.0.1-6K8HEeMYPiCLPWfTtBRoSe
+Registering library for elm-export-0.6.0.1..
